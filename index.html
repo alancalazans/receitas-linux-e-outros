@@ -892,35 +892,24 @@
 <a name="030.00">030.00</a> <a href="#topo">(topo)</a>              <span class="azul">YOUTUBE-DLG-GUI - INSTALL</span>
 ================================================================================
 
-  <span class="marrom">● Como instalar o youtube-dl-gui no Ubuntu</span>
+  <span class="marrom">● O site tem instruções para instalar:</span>
 
-    sudo add-apt-repository ppa:nilarimogard/webupd8
+    https://github.com/MrS0m30n3/youtube-dl-gui
 
-    sudo apt-get update
+  <span class="marrom">● O site orienta a fazer os seguintes passos:</span>
 
-  <span class="marrom">● Agora proceda com a instalação:</span>
+   → Baixe e extraia o fonte
+   → Entre no diretório extraído
+   → Execute a instalação: <strong>python setup.py install</strong>
 
-    sudo apt-get install youtube-dlg
+    <span class="marrom">○ Com relação ao último passo é altamente recomendado fazer:</span>
 
-  <span class="marrom">● Como instalar no Debian ←</span>
+       <strong>python setup.py install --record files.txt</strong>
 
-  <span class="marrom">● Verifique se há uma versão mais atualizada para baixar, antes de prosseguir, </span>
-    <span class="marrom">no site: http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/</span>
+    <span class="marrom">○ Assim podemos desinstalar (caso necessário) da seguinte forma:</span>
 
-    tar xvzf youtube-dlg_0.3.8.orig.tar.gz
-
-    cd youtube-dl-gui-0.3.8/
-
-  <span class="marrom">● Em seguida, instale algumas bibliotecas Python, necessárias para rodar o aplicativo:</span>
-
-    sudo aptitude install python-wxgtk3.0-dev
-
-  <span class="marrom">● Agora, vamos à instalação:</span>
-
-    sudo python setup.py install
-
-    <span class="marrom">… e voilá! O aplicativo já está pronto para ser executado do terminal: youtube-dl-gui.
-    Divirta-se!</span>
+       <strong>sudo gnome-terminal</strong> <span class="azul">(para abrir terminal como super-usuário)</span> 
+       <strong>cat files.txt | xargs rm -rf</strong> <span class="azul">(para remover os arquivos gravados pela etapa anterior)</span>
 
 ================================================================================
 <a name="030.01">030.01</a> <a href="#topo">(topo)</a>                <span class="azul">YOUTUBE-DL - COMANDOS</span>
