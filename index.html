@@ -2,111 +2,1541 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<title>Links úteis</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/utils.css">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/ico/link.jpg">
-	<script type="text/javascript" src="assets/js/dados.js"></script>
+	<title>Receitas</title>
+	<link rel="icon" type="image/png" href="assets/img/linux.png" />
+
+	<style type="text/css">
+
+		* {margin: 0; padding: 0;} /* Reset (remove a margem padrão do browser) */
+
+		body {
+			font-family: 'Trebuchet MS', Helvetica, sans-serif;
+			font-size: 14px;
+			/* font-weight: bold; */
+		}
+
+		a { font-weight: bold; }
+
+		#content { margin-left: 10px; }
+
+    body { background-color: rgb(212, 228, 123); }
+
+		.azul { color: blue; font-weight: bold; }
+
+		.marrom { color: brown; font-weight: bold; }
+
+	</style>
 </head>
 <body>
-	<!-- container -->
-	<div id="container">
-		<!-- nav -->
-		<nav class="borda menu">
-			<ul id="menu">
-				<script type="text/javascript">
-					for (var key in dados.links) {
-						window.document.write(dados.links[key]);
-					}
-				</script>
-			</ul>
-		</nav><!-- /nav -->
-		<!-- section -->
-		<section class="borda">
-			<!-- article -->
-			<article class="borda transparency">
-			</article><!-- /article -->
-		</section><!-- /section -->
-	</div><!-- /container -->
+  <div id="content">
+<pre>
+================================================================================
+                                       <span class="azul"><a name="topo">INDICE</a></span>
+================================================================================
 
-	<script type="text/javascript">
-		var html = '';
-		var tag_article = document.getElementsByClassName('transparency');
-		var categoria = dados.emails;
-		setContent();
+  <a href="#001.00">001.00</a> <span class="marrom">●</span> UBUNTU DOWNLOAD DISTRIBUIÇÕES
+  <a href="#001.01">001.01</a> <span class="marrom">●</span> LINUX LITE - DOWNLOAD
+  <a href="#002.00">002.00</a> <span class="marrom">●</span> THEMES PARA GTK
+  <a href="#002.01">002.01</a> <span class="marrom">●</span> XFCE THEME MANAGER - INSTALAR NO UBUNTU
+  <a href="#003.00">003.00</a> <span class="marrom">●</span> WALLPAPERS
+  <a href="#004.00">004.00</a> <span class="marrom">●</span> UBUNTU GNOME
+  <a href="#005.00">005.00</a> <span class="marrom">●</span> LINUX LITE - SCREENSAVER
+  <a href="#006.00">006.00</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL VERSÃO DO UBUNTU
+  <a href="#007.00">007.00</a> <span class="marrom">●</span> UNINSTALL PROGRAMA E CORRIGINDO PACOTES DE INSTALAÇÃO
+  <a href="#008.00">008.00</a> <span class="marrom">●</span> COMANDOS DE LIMPESA GERAL
+  <a href="#008.01">008.01</a> <span class="marrom">●</span> BLEACHBIT PROGRAMA P/ LIMPESA GERAL
+  <a href="#009.00">009.00</a> <span class="marrom">●</span> FORMATAR PENDRIVE
+  <a href="#010.00">010.00</a> <span class="marrom">●</span> ALTERAR VOLUME (LABEL) PENDRIVE
+  <a href="#011.00">011.00</a> <span class="marrom">●</span> MONTANDO UMA UNIDADE VIRTUAL
+  <a href="#012.00">012.00</a> <span class="marrom">●</span> CRIANDO ARQUIVO ISO
+  <a href="#013.00">013.00</a> <span class="marrom">●</span> CHOWN - MUNDANDO O PROPRIETÁRIO E/OU GRUPO DE ARQUIVO
+  <a href="#013.01">013.01</a> <span class="marrom">●</span> CHMOD - MUDANDO PERMISSÕES DE ARQUIVO E/OU PASTA
+  <a href="#014.00">014.00</a> <span class="marrom">●</span> CRIANDO LINK DE APLICATIVO PARA TERMINAL LINUX
+  <a href="#015.00">015.00</a> <span class="marrom">●</span> WINE - Instalação com dotNet
+  <a href="#016.00">016.00</a> <span class="marrom">●</span> GIMP - MANUAL
+  <a href="#017.00">017.00</a> <span class="marrom">●</span> FIREFOX - TRADUZINDO PARA PT-BR NO UBUNTU
+  <a href="#018.00">018.00</a> <span class="marrom">●</span> CHROMIUM - INSTALAÇÃO COM INTERFACE EM PORTUGUÊS
+  <a href="#018.01">018.01</a> <span class="marrom">●</span> SEAMONKEY - INSTALAR NO UBUNTU
+  <a href="#019.00">019.00</a> <span class="marrom">●</span> JAVA 8 - COMO INSTALAR NO UBUNTU
+  <a href="#020.00">020.00</a> <span class="marrom">●</span> ADOBE FLASH P/ FIREFOX E CHROMIUM
+  <a href="#021.00">021.00</a> <span class="marrom">●</span> IRON BROWSER - DOWNLOAD
+  <a href="#022.00">022.00</a> <span class="marrom">●</span> LIBREOFFICE TRADUZIR PARA PT-BR
+  <a href="#023.00">023.00</a> <span class="marrom">●</span> REMOVER LIBREOFFICE
+  <a href="#024.00">024.00</a> <span class="marrom">●</span> 7ZIP - INSTALAR NO FEDORA
+  <a href="#025.00">025.00</a> <span class="marrom">●</span> 7ZIP - INSTALAR NO UBUNTU
+  <a href="#026.00">026.00</a> <span class="marrom">●</span> ZIP, RAR, TAR.GZ, BZ2, TAR, TAR.BZ2
+  <a href="#027.00">027.00</a> <span class="marrom">●</span> ZIP E UNZIP - USO BÁSICO
+  <a href="#028.00">028.00</a> <span class="marrom">●</span> 7ZIP
+  <a href="#029.00">029.00</a> <span class="marrom">●</span> YOUTUBE-DL - INSTALL
+  <a href="#030.00">030.00</a> <span class="marrom">●</span> YOUTUBE-DLG-GUI - INSTALL
+  <a href="#030.01">030.01</a> <span class="marrom">●</span> YOUTUBE-DL - COMANDOS
+  <a href="#031.00">031.00</a> <span class="marrom">●</span> MKVTOOLNIX NO UBUNTU/FEDORA
+  <a href="#032.00">032.00</a> <span class="marrom">●</span> EXTRAIR AUDIO DE VÍDEO
+  <a href="#033.00">033.00</a> <span class="marrom">●</span> EXTRAIR AUDIO DE VÍDEO COM AVCONV
+  <a href="#034.00">034.00</a> <span class="marrom">●</span> INSTALAR SOUND CONVERTER
+  <a href="#035.00">035.00</a> <span class="marrom">●</span> VIRTUALBOX INSTALAÇÃO NO UBUNTU
+  <a href="#036.00">036.00</a> <span class="marrom">●</span> VIRTUALBOX NO UBUNTU GNOME
+  <a href="#037.00">037.00</a> <span class="marrom">●</span> VIRTUALBOX - MONTANDO PASTA COMPARTILHADA WINDOWS NO LINUX
+  <a href="#038.00">038.00</a> <span class="marrom">●</span> XAMPP - SITE P/ DOWNLOAD
+  <a href="#039.00">039.00</a> <span class="marrom">●</span> XAMPP - COMANDOS
+  <a href="#040.00">040.00</a> <span class="marrom">●</span> ALTERAR TIMEZONE NO PHP
+  <a href="#041.00">041.00</a> <span class="marrom">●</span> XAMPP - MUDAR DIRETÓRIO PADRÃO DOS PROJETOS
+  <a href="#042.00">042.00</a> <span class="marrom">●</span> PDO - CLASSE QUE GERÊNCIA BANCO DE DADOS (SITE)
+  <a href="#043.00">043.00</a> <span class="marrom">●</span> DICAS SOBRE PHP
+  <a href="#044.00">044.00</a> <span class="marrom">●</span> CURSO DE PHP ORIENTADO A OBJETOS
+  <a href="#045.00">045.00</a> <span class="marrom">●</span> PYTHON - SERVIDOR
+  <a href="#046.00">046.00</a> <span class="marrom">●</span> PHP - SERVIDOR
+  <a href="#047.00">047.00</a> <span class="marrom">●</span> GETBOOTSTRAPT - SITE OFICIAL EM PORTUGUÊS
+  <a href="#048.00">048.00</a> <span class="marrom">●</span> A GRID DO BOOTSTRAP
+  <a href="#049.00">049.00</a> <span class="marrom">●</span> TECNOLOGIAS WEB
+  <a href="#050.00">050.00</a> <span class="marrom">●</span> SWEET HOME 3D (SOFTWARE DE DESIGN DE AMBIENTES)
+  <a href="#051.00">051.00</a> <span class="marrom">●</span> LIBRE CAD
+  <a href="#052.00">052.00</a> <span class="marrom">●</span> FREECAD
+  <a href="#053.00">053.00</a> <span class="marrom">●</span> ALTERNATIVAS AO AUTOCAD
+  <a href="#054.00">054.00</a> <span class="marrom">●</span> MONO - SITE
+  <a href="#055.00">055.00</a> <span class="marrom">●</span> MONODEVELOP COMPLETO PARA COMPILAR E GERAR PACOTE
+  <a href="#056.00">056.00</a> <span class="marrom">●</span> LAZARUS - SITE
+  <a href="#057.00">057.00</a> <span class="marrom">●</span> LIVECODE - IDE LINGUAGEM GO
+  <a href="#058.00">058.00</a> <span class="marrom">●</span> VISUAL STUDIO CODE
+  <a href="#059.00">059.00</a> <span class="marrom">●</span> BABEL STANDALONE
+  <a href="#060.00">060.00</a> <span class="marrom">●</span> REACT (SITE)
+  <a href="#061.00">061.00</a> <span class="marrom">●</span> BLUEFISH - INSTALL
+  <a href="#062.00">062.00</a> <span class="marrom">●</span> VIM - IDENTAR BLOCO DE TEXTO
+  <a href="#063.00">063.00</a> <span class="marrom">●</span> Xfce Theme Manager
+  <a href="#064.00">064.00</a> <span class="marrom">●</span> ZRAM (Otimização de SWAP)
+  <a href="#065.00">065.00</a> <span class="marrom">●</span> PDF - COMO JUNTAR E DIVIDIR ARQUIVOS
+  <a href="#066.00">066.00</a> <span class="marrom">●</span> FEDORA - Guia de pós-instalação do Fedora 28
+  <a href="#067.00">067.00</a> <span class="marrom">●</span> FEDORA - MONTAR ANDROID AUTOMATICAMENTE
+  <a href="#068.00">068.00</a> <span class="marrom">●</span> FEDORA - INSTALAR LIBREOFFICE
+  <a href="#069.00">069.00</a> <span class="marrom">●</span> FEDORA - ATALHOS NO MENU
+  <a href="#070.00">070.00</a> <span class="marrom">●</span> FEDORA - PRINTSCREEN DE REGIÃO DA TELA
+  <a href="#070.01">070.01</a> <span class="marrom">●</span> FEDORA - REMOVER REPÓSITORIOS COM PROBLEMA
+  <a href="#071.00">071.00</a> <span class="marrom">●</span> FFMPEG - CORTAR MP3
+  <a href="#072.00">072.00</a> <span class="marrom">●</span> MAKE UNINSTALL
 
-		function clickLink(tag_a) {
-			if (tag_a.parentNode.getAttribute('class') == 'active') return false;
-			html = '';
-			var tag_li = document.getElementsByClassName('active')[0];
-			tag_li.setAttribute('class', 'inactive');
-			tag_a.parentNode.setAttribute('class', 'active');
-			categoria = tag_a.getAttribute('id');
-			switch (categoria) {
-				case 'emails':
-					categoria = dados.emails;
-					break;
-				case 'redesocial':
-					categoria = dados.redesocial;
-					break;
-				case 'noticias':
-					categoria = dados.noticias;
-					break;
-				case 'pesquisa':
-					categoria = dados.pesquisa;
-					break;
-				case 'filmes':
-					categoria = dados.filmes;
-					break;
-				case 'bancos':
-					categoria = dados.bancos;
-					break;
-				case 'ensino':
-					categoria = dados.ensino;
-					break;
-				case 'loterias':
-					categoria = dados.loterias;
-					break;
-				case 'nuvem':
-					categoria = dados.nuvem;
-					break;
-				case 'concursos':
-					categoria = dados.concursos;
-					break;
-				case 'enem':
-					categoria = dados.enem;
-					break;
-				case 'radios':
-					categoria = dados.radios;
-					break;
-				case 'uteis':
-					categoria = dados.uteis;
-					break;
-				case 'servicos':
-					categoria = dados.servicos;
-					break;
-				case 'dessoft':
-					categoria = dados.dessoft;
-					break;
-				case 'diversos':
-					categoria = dados.diversos;
-					break;
-			}
-			setContent();
-			return false;
-		}
+================================================================================
+<a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
+================================================================================
 
-		function setContent() {
-			for (var key in categoria) {
-				html+='<div class="links">';
-				html+='<a href="'+categoria[key].href+'" target="'+categoria[key].target+'">';
-				html+=categoria[key].img;
-				html+='<br>'+categoria[key].title;
-				html+='</a>';
-				html+='</div>';
-			}
-			tag_article[0].innerHTML = html;
-		}
-	</script>
+  <a href="http://releases.ubuntu.com">http://releases.ubuntu.com</a>
+
+================================================================================
+<a name="001.01">001.01</a> <a href="#topo">(topo)</a>                <span class="azul">LINUX LITE - DOWNLOAD</span>
+================================================================================
+
+  <a href="https://sourceforge.net/projects/linuxlite/files/">https://sourceforge.net/projects/linuxlite/files/</a>
+
+================================================================================
+<a name="002.00">002.00</a> <a href="#topo">(topo)</a>                   <span class="azul">THEMES PARA GTK</span>
+================================================================================
+
+  <a href="https://www.deviantart.com">https://www.deviantart.com</a>
+
+  <a href="https://www.gnome-look.org">https://www.gnome-look.org</a>
+
+  <a href="https://www.opendesktop.org/">https://www.opendesktop.org/</a>
+
+================================================================================
+<a name="002.01">002.01</a> <a href="#topo">(topo)</a>       <span class="azul">XFCE THEME MANAGER - INSTALAR NO UBUNTU</span>
+================================================================================
+
+  <span class="marrom">● No terminal entre com seguintes comandos:</span>
+
+    sudo add-apt-repository ppa:rebuntu16/other-stuff
+
+  <span class="marrom">● Atualize o gerenciador de pacotes com o comando:</span>
+
+    sudo apt-get update
+
+  <span class="marrom">● Agora use o comando abaixo para instalar o programa:</span>
+
+    sudo apt-get install xfce-theme-manager
+
+================================================================================
+<a name="003.00">003.00</a> <a href="#topo">(topo)</a>                     <span class="azul">WALLPAPERS</span>
+================================================================================
+
+  <a href="https://pt.best-wallpaper.net">https://pt.best-wallpaper.net</a>
+
+  <a href="https://wall.alphacoders.com/">https://wall.alphacoders.com/</a>
+
+================================================================================
+<a name="004.00">004.00</a> <a href="#topo">(topo)</a>                    <span class="azul">UBUNTU GNOME</span>
+================================================================================
+
+  <span class="marrom">● Instalar 'Synaptic':</span>
+
+    sudo apt install synaptic
+
+  <span class="marrom">● Instalar outro file manager 'pcmanfm'</span>
+
+    Abra o 'synaptic' e instale 'pcmanfm'
+
+  <span class="marrom">● Personalizar tema do sistema abra terminal e digite:</span>
+
+    gnome-tweak-tool
+
+================================================================================
+<a name="005.00">005.00</a> <a href="#topo">(topo)</a>              <span class="azul">LINUX LITE - SCREENSAVER</span>
+================================================================================
+
+  <span class="marrom">● Instalar screensaver:</span>
+
+    sudo apt-get install xscreensaver
+
+================================================================================
+<a name="006.00">006.00</a> <a href="#topo">(topo)</a>      <span class="azul">COMANDO PARA SABER QUAL VERSÃO DO UBUNTU</span>
+================================================================================
+
+  cat /etc/os-release
+
+  cat /etc/issue
+
+================================================================================
+<a name="007.00">007.00</a> <a href="#topo">(topo)</a>  <span class="azul">UNINSTALL PROGRAMA E CORRIGINDO PACOTES DE INSTALAÇÃO</span>
+================================================================================
+
+  <span class="marrom">● Buscar programa correto a ser desinstalado:</span>
+
+    <span class="marrom">● Exemplo:</span>
+
+      dpkg --get-selections | grep opera
+
+    <span class="marrom">● Retorno do comando acima:</span>
+
+      opera-stable          install
+
+    <span class="marrom">● Agora é só desinstalar:</span>
+
+      sudo apt-get remove --purge opera-stable
+
+    <span class="marrom">● Corrigindo pacotes de instalação:</span>
+
+      sudo apt-get -f install
+
+================================================================================
+<a name="008.00">008.00</a> <a href="#topo">(topo)</a>               <span class="azul">COMANDOS DE LIMPESA GERAL</span>
+================================================================================
+
+  sudo apt-get clean
+
+  sudo apt-get autoclean
+
+  sudo apt-get autoremove
+
+================================================================================
+<a name="008.01">008.01</a> <a href="#topo">(topo)</a>          <span class="azul">BLEACHBIT PROGRAMA P/ LIMPESA GERAL</span>
+================================================================================
+
+  sudo apt-get install bleachbit
+
+================================================================================
+<a name="009.00">009.00</a> <a href="#topo">(topo)</a>                   <span class="azul">FORMATAR PENDRIVE</span>
+================================================================================
+
+  <span class="marrom">● Listar unidades montadas:</span>
+
+  <span class="marrom">● Primeira forma:</span>
+
+    $ df
+
+  <span class="marrom">○ Exemplo de saída:</span>
+
+    Sist. Arq.                              Blocos de 1K     Usado Disponível Uso% Montado em
+    devtmpfs                                     2000124         0    2000124   0% /dev
+    tmpfs                                        2013976     34132    1979844   2% /dev/shm
+    tmpfs                                        2013976      1204    2012772   1% /run
+    tmpfs                                        2013976         0    2013976   0% /sys/fs/cgroup
+    /dev/mapper/fedora_localhost--live-root     51343840   9982060   38723956  21% /
+    tmpfs                                        2013976        36    2013940   1% /tmp
+    /dev/mapper/fedora_localhost--live-home    249877432 125664320  111450388  53% /home
+    /dev/sda1                                     999320    224748     705760  25% /boot
+    tmpfs                                         402792        28     402764   1% /run/user/1000
+    /dev/sdb1                                   15850496   9757120    6093376  62% /run/media/calazans/PEN16G
+
+  <span class="marrom">● Segunda forma:</span>
+
+    # fdisk -l
+
+  <span class="marrom">○ Exemplo de saída:</span>
+
+    <span class="marrom">...</span>
+
+    Dispositivo Inicializar Início      Fim  Setores Tamanho Id Tipo
+    /dev/sdb1                   63 31562687 31562625   15,1G  7 HPFS/NTFS/exFAT
+
+  <span class="marrom">● Terceira forma:</span>
+
+    $ lsblk
+
+  <span class="marrom">○ Exemplo de saída:</span>
+
+    NAME                            MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                               8:0    0 298,1G  0 disk
+    ├─sda1                            8:1    0     1G  0 part /boot
+    └─sda2                            8:2    0 297,1G  0 part
+      ├─fedora_localhost--live-root 253:0    0    50G  0 lvm  /
+      ├─fedora_localhost--live-swap 253:1    0     4G  0 lvm  [SWAP]
+      └─fedora_localhost--live-home 253:2    0 243,1G  0 lvm  /home
+    sdb                               8:16   1  15,1G  0 disk
+    └─sdb1                            8:17   1  15,1G  0 part /run/media/calazans/PEN16G
+    sr0                              11:0    1  1024M  0 rom
+
+  <span class="marrom">● Desmontar unidade a ser formatada:</span>
+
+    $ umount /dev/sdb1
+
+  <span class="marrom">● Para formatar em <strong>fat32</strong>:</span>
+
+    # mkfs.vfat -n 'PEN16G' /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkfs.vfat -c -v -n 'PEN16G' -I /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkfs -t vfat -c -v -n 'PEN16G' -I /dev/sdb1
+<span class="marrom">
+    ○ mkfs → comando responsável por formatar o sistema de aquivo
+    ○ -n   → nomeia o novo dispositivo (no máximo 11 letras)
+    ○ -c   → pede para que o aplicativo faça uma checagem no drive, após
+              a formatação (Esta opção é demorada).
+    ○ -v   → liga a “verbosidade”.
+    ○ vfat → formata no sistema de arquivos FAT. Outros disponíveis: mkfs.bfs,
+              mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.minix, mkfs.msdos, mkfs.vfat,
+              mkfs.xfs, mkfs.xiafs.
+    ○ -I   → Partição do Pen Drive (Não é obrigatório);
+</span>
+
+  <span class="marrom">● Para formatar em <strong>NTFS</strong>:</span>
+
+  <span class="marrom">● Formato NTFS (recomentado):</span>
+
+    # mkfs.ntfs -I /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkfs.ntfs -f -I /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkntfs -I /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkntfs -f -I /dev/sdb1
+
+  <span class="marrom">● Formatação completa:</span>
+
+    # mkfs.ntfs /dev/sdb1
+
+     <span class="marrom">○ Ou</span>
+
+    # mkntfs /dev/sdb1
+<span class="marrom">
+    ○ -f → Executa a formatação rápida. Isso ignorará tanto a redução de volume quanto a verificação de setor ruim.
+</span>
+
+  <span class="marrom">● Para formatar em <strong>exFat</strong>:</span>
+
+  <span class="marrom">● Primeiro instalar suporte para este filesystem:</span>
+
+   # dnf install exfat-utils fuse-exfat -y
+
+  <span class="marrom">● No Ubuntu:</span>
+
+   $ sudo add-apt-repository ppa:relan/exfat
+
+   $ sudo apt-get update && sudo apt-get install fuse-exfat exfat-utils
+
+  <span class="marrom">● E para formatar em <strong>exFat</strong>:</span>
+
+   # mkfs.exfat -n 'PEN16G' /dev/sdb1
+
+  <span class="marrom">● Renomear pendrive:</span>
+
+  <span class="marrom">● Partições <strong>ntfs</strong>:</span>
+
+    # ntfslabel /dev/sdb1 'PEN16G'
+
+  <span class="marrom">● Partições <strong>ReiserFS</strong>:</span>
+
+    # reiserfstune -l /dev/sdb1 'PEN16G'</span>
+
+  <span class="marrom">● E em partições <strong>EXT2, EXT3 e EXT4</strong>:</span>
+
+    # tune2fs -L /dev/sdb1 'PEN16G'
+
+     <span class="marrom">○ Ou</span>
+
+    # e2label /dev/sdb1 'PEN16G'
+
+  <span class="marrom">● Para ejetar pendrive:</span>
+
+    # eject /dev/sdb1
+
+================================================================================
+<a name="010.00">010.00</a> <a href="#topo">(topo)</a>            <span class="azul">ALTERAR VOLUME (LABEL) PENDRIVE</span>
+================================================================================
+
+  <span class="marrom">● Listar unidades montadas:</span>
+
+    df
+
+     <span class="marrom">○ Ou</span>
+
+    # fdisk -l
+
+  <span class="marrom">● Desmontar unidade:</span>
+
+    umount /dev/sdb1
+
+  <span class="marrom">● Mudando rótulo:</span>
+
+    # mkfs.vfat -n 'PEN16G' /dev/sdb1
+
+  <span class="marrom">● Obs.: Arquivos são deletados.</span>
+
+  <span class="marrom">● E para rotular pendrive (outro comando):</span>
+
+  <span class="marrom">● Usando 'mtools', checando se tem rótulo:</span>
+
+    # mlabel -i /dev/sdb1 -s::
+
+  <span class="marrom">● Se aparecer mensagem sobre setor rodar:</span>
+
+    echo mtools_skip_check=1 &gt;&gt; ~/.mtoolsrc
+
+    # mlabel -i /dev/sdb1::'PEN16G'
+
+================================================================================
+<a name="011.00">011.00</a> <a href="#topo">(topo)</a>              <span class="azul">MONTANDO UMA UNIDADE VIRTUAL</span>
+================================================================================
+
+  mount -o loop &lt;imagem.iso&gt; /media/cdrom
+
+   <span class="marrom">○ Ou</span>
+
+  mount -t iso9660 &lt;imagem.iso&gt; /media/cdrom
+
+================================================================================
+<a name="012.00">012.00</a> <a href="#topo">(topo)</a>                 <span class="azul">CRIANDO ARQUIVO ISO</span>
+================================================================================
+
+  mkisofs -pad -r -j -o &lt;imagem.iso&gt; /&lt;dir_origem&gt;
+
+  genisoimage -o &lt;imagem.iso&gt; /media/calazans/&lt;dir_origem&gt;
+
+================================================================================
+<a name="013.00">013.00</a> <a href="#topo">(topo)</a> <span class="azul">CHOWN - MUDANDO O PROPRIETÁRIO E/OU GRUPO DE ARQUIVO E/OU PASTA</span>
+================================================================================
+
+  chown &lt;username&gt;[:grupo] &lt;arquivo&gt;
+
+  <span class="marrom">● Para pasta:</span>
+
+    chown &lt;username&gt; -R &lt;diretório&gt;
+
+    <span class="marrom">Obs.: O parâmetro '-R' é para recursividade pegar todos as subpastas e arquivos.</span>
+
+================================================================================
+<a name="013.01">013.01</a> <a href="#topo">(topo)</a> <span class="azul">CHMOD - MUDANDO PERMISSÕES DE ARQUIVO E/OU PASTA</span>
+================================================================================
+
+  <span class="marrom">● Existem basicamente 3 partes que podem ser reconhecidas como: dono, grupo e
+  usuário:</span>
+
+    dono = rwx
+    grupo = rwx
+    usuário = rwx
+
+    r = read (ler)
+    w = write (gravar)
+    x = execute (executar)
+
+  <span class="marrom">● São visualizados da seguinte forma:</span>
+
+    -rwxrwxrwx
+
+  <span class="marrom">● Cada letra significa um número:</span>
+
+    r = 4
+    w = 2
+    x = 1
+
+  <span class="marrom">● Se você somar todos os 3 números, vai obter 7, que significa permissão total,
+  ou seja, ler, gravar e executar.</span>
+
+  <span class="marrom">● Funciona da seguinte forma:</span>
+
+    O chmod é o comando usado para dar ou tirar permissão de determina arquivo
+    ou diretório. Vamos supor que você quer dar permissão de leitura(r), grava-
+    ção(w) e execução(x) para o dono, leitura(r) e gravação(w) para o grupo e
+    leitura para os usuários, sendo arquivo ou diretório, ficaria da seguinte
+    maneira:
+
+    $ chmod 764
+
+    E estaria representado da sequinte forma:
+
+    -rwxrw-r--
+
+    Seus respectivos valores são:
+
+    -rwx = 7 (4+2+1) = acesso total
+    rw- = 6 (4+2) = acesso de leitura(4) e gravação(2)
+    r-- = 4 = acesso de leitura
+
+    Representação das permissões:
+
+    -rwx = dono
+    rw- = grupo
+    r-- = usuário
+
+================================================================================
+<a name="014.00">014.00</a> <a href="#topo">(topo)</a>    <span class="azul">CRIANDO LINK DE APLICATIVO PARA TERMINAL LINUX</span>
+================================================================================
+
+  sudo ln -sf /opt/VSCode-linux-x64/bin/code /usr/bin/code
+
+================================================================================
+<a name="015.00">015.00</a> <a href="#topo">(topo)</a>             <span class="azul">WINE - Instalação com dotNet</span>
+================================================================================
+
+  <span class="marrom">● Como instalar .NET Framework no WINE.</span>
+
+  <span class="marrom">● Primeiro, instalei o "wine" e o "cabextract":</span>
+
+    sudo apt-get install wine cabextract
+
+  <span class="marrom">● Depois, baixar o pacote "winetricks":</span>
+
+    wget http://www.kegel.com/wine/winetricks
+
+  <span class="marrom">● Executar o "winetricks" e pedi para instalar o .NET Framework 2.0:</span>
+
+    sh winetricks -v dotnet20
+
+================================================================================
+<a name="016.00">016.00</a> <a href="#topo">(topo)</a>                   <span class="azul">GIMP - MANUAL</span>
+================================================================================
+
+  <a href="https://docs.gimp.org/2.8/pt_BR/script-fu-round-corners.html">https://docs.gimp.org/2.8/pt_BR/script-fu-round-corners.html</a>
+
+================================================================================
+<a name="017.00">017.00</a> <a href="#topo">(topo)</a>       <span class="azul">FIREFOX - TRADUZINDO PARA PT-BR NO UBUNTU</span>
+================================================================================
+
+  <a href="https://addons.mozilla.org/pt-BR/firefox/addon/firefox-br/versions/">https://addons.mozilla.org/pt-BR/firefox/addon/firefox-br/versions/</a>
+
+================================================================================
+<a name="018.00">018.00</a> <a href="#topo">(topo)</a>    <span class="azul">CHROMIUM - INSTALAÇÃO COM INTERFACE EM PORTUGUÊS</span>
+================================================================================
+
+  <span class="marrom">● No terminal entre com os comandos:</span>
+
+    sudo apt update
+
+    sudo apt install chromium-browser chromium-browser-l10n
+
+    <span class="marrom">Obs.: Se os comandos acima não funcionarem e o seu chromium continuar em inglês,</span>
+          <span class="marrom">faça os passos abaixo:</span>
+
+          sudo dpkg-reconfigure locales
+
+    <span class="marrom">● Após digitar o comando acima, marque as seguintes opções:
+
+      [*] pt_BR iso-8859-1
+      [*] pt_BR.UTF-8 UTF-8</span>
+
+    <span class="marrom">● Depois de marcar as opções acima, digite o comando abaixo:</span>
+
+      sudo locale-gen
+
+    <span class="marrom">● Pronto! Abra o seu chromium e veja ele totalmente em português brasileiro.</span>
+
+================================================================================
+<a name="018.01">018.01</a> <a href="#topo">(topo)</a>            <span class="azul">SEAMONKEY - INSTALAR NO UBUNTU</span>
+================================================================================
+
+  <span class="marrom">● No terminal entre com seguintes comandos:</span>
+
+    sudo sh -c "echo 'deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main' >> /etc/apt/sources.list"
+
+  <span class="marrom">● Baixe a chave do repositório do programa com o comando:</span>
+
+    sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2667CA5C
+
+  <span class="marrom">● Atualize o gerenciador de pacotes com o comando:</span>
+
+    sudo apt-get update
+
+  <span class="marrom">● Agora use o comando abaixo para instalar o programa:</span>
+
+    sudo apt-get install seamonkey-mozilla-build
+
+================================================================================
+<a name="019.00">019.00</a> <a href="#topo">(topo)</a>           <span class="azul">JAVA 8 - COMO INSTALAR NO UBUNTU</span>
+================================================================================
+
+  sudo add-apt-repository ppa:webupd8team/java
+
+  sudo apt-get update
+
+  sudo apt-get install oracle-java8-installer
+
+  <span class="marrom">Obs.: Depois da instalação para verificar se o java foi instalado corretamente</span>
+        <span class="marrom">digite:</span>
+
+        java -version
+
+================================================================================
+<a name="020.00">020.00</a> <a href="#topo">(topo)</a>           <span class="azul">ADOBE FLASH P/ FIREFOX E CHROMIUM</span>
+================================================================================
+
+  <span class="marrom">● Para baixar o 'flash player plugin' correspondente ao navegador que deseja ins-</span>
+    <span class="marrom">talar, estando com o navegador aberto entre no endereço abaixo:</span>
+
+    <a href="https://get.adobe.com/br/flashplayer/">https://get.adobe.com/br/flashplayer/</a>
+
+  <span class="marrom">● Baixe o arquivo com extensão '.tar.gz' que será correspondente ao navegador em</span>
+    <span class="marrom">em que se esta baixando.</span>
+
+  <span class="marrom">● Agora para o 'Firefox' extraia conforme abaixo:</span>
+
+    tar -vzxf flash_player_npapi_linux.i386.tar.gz
+
+  <span class="marrom">● Copie o arquivo 'libflashplayer.so' para a pasta conforme abaixo (caso a pasta</span>
+    <span class="marrom">não exista necessário criá-la antes):</span>
+
+    cp libflashplayer.so ~/.mozilla/plugins/
+
+  <span class="marrom">● Pronto !!!</span>
+
+  <span class="marrom">● Agora p/ o 'Chromium':</span>
+
+  <span class="marrom">● Estando com o 'Chromium' aberto baixe, no endereço da 'Adobe' acima, o arquivo</span>
+    <span class="marrom">e extraia conforme abaixo:</span>
+
+    tar -vzxf flash_player_ppapi_linux.i386.tar.gz
+
+  <span class="marrom">● Copie o arquivo 'libpepflashplayer.so' para a pasta conforme abaixo (caso a pasta</span>
+    <span class="marrom">não exista, criá-la):</span>
+
+    <span class="marrom">● Para criar a pasta: sudo mkdir /usr/lib/adobe-flashplugin</span>
+
+      sudo cp libpepflashplayer.so /usr/lib/adobe-flashplugin/
+
+  <span class="marrom">● Abrir o arquivo 'manifest.json' e procurar a linha com a versão do plugin</span>
+    <span class="marrom">("version":"11.3.31.109") anotar a versão e editar o arquivo no caminho</span>
+    <span class="marrom">abaixo:</span>
+
+    /usr/share/applications/chromium-browser.desktop
+
+  <span class="marrom">● Na linha que contiver:</span>
+
+    Exec=chromium-browser %U
+
+  <span class="marrom">● Acrescentar:</span>
+
+    --ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so --ppapi-flash-version=11.3.31.109
+
+  <span class="marrom">● Ficando:</span>
+
+    Exec=chromium-browser %U --ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so --ppapi-flash-version=11.3.31.109
+
+================================================================================
+<a name="021.00">021.00</a> <a href="#topo">(topo)</a>                 <span class="azul">IRON BROWSER - DOWNLOAD</span>
+================================================================================
+
+  <a href="http://www.srware.net/en/software_srware_iron_download.php">http://www.srware.net/en/software_srware_iron_download.php</a>
+
+================================================================================
+<a name="022.00">022.00</a> <a href="#topo">(topo)</a>             <span class="azul">LIBREOFFICE TRADUZIR PARA PT-BR</span>
+================================================================================
+
+  sudo apt-get install libreoffice-l10n-pt-br
+
+================================================================================
+<a name="023.00">023.00</a> <a href="#topo">(topo)</a>                  <span class="azul">REMOVER LIBREOFFICE</span>
+================================================================================
+
+  sudo apt remove --purge libreoffice*
+
+================================================================================
+<a name="024.00">024.00</a> <a href="#topo">(topo)</a>               <span class="azul">7ZIP - INSTALAR NO FEDORA</span>
+================================================================================
+
+  sudo dnf install p7zip p7zip-plugins lzip cabextract unrar
+
+================================================================================
+<a name="025.00">025.00</a> <a href="#topo">(topo)</a>               <span class="azul">7ZIP - INSTALAR NO UBUNTU</span>
+================================================================================
+
+  sudo apt install p7zip p7zip-full p7zip-rar lzma lzma-dev
+
+================================================================================
+<a name="026.00">026.00</a> <a href="#topo">(topo)</a>          <span class="azul">ZIP, RAR, TAR.GZ, BZ2, TAR, TAR.BZ2</span>
+================================================================================
+
+  <span class="marrom">● PARA COMPACTAR:</span>
+
+  <span class="marrom">● ZIP:</span>
+
+    zip &lt;nome_do_arquivo&gt;.zip &lt;arquivo_a_ser_compactado&gt;
+
+    zip -r &lt;nome_do_arquivo&gt;.zip &lt;pasta_a_ser_compactada&gt;
+
+  <span class="marrom">● RAR:</span>
+
+    rar a &lt;nome_do_arquivo&gt;.rar &lt;arquivo_a_ser_compactado&gt;
+
+  <span class="marrom">● TAR:</span>
+
+    tar -cf &lt;nome_do_arquivo&gt;.tar &lt;arquivo_a_ser_compactado&gt;
+
+  <span class="marrom">● TAR.GZ - proceda a compactação anterior com tar e então execute o comando abaixo:</span>
+
+    gzip -9 &lt;nome_do_arquivo&gt;.tar
+
+  <span class="marrom">● BZ2:</span>
+
+    bzip2 &lt;nome_do_arquivo&gt;.bz2
+
+  <span class="marrom">● TAR.BZ2:</span>
+
+    tar -jxvf &lt;nome_do_arquivo&gt;.tar.bz2
+
+  <span class="marrom">● PARA DESCOMPACTAR:</span>
+
+  <span class="marrom">● RAR:</span>
+
+    unrar x &lt;nome_do_arquivo&gt;.rar
+
+  <span class="marrom">● TAR:</span>
+
+    tar -xvf &lt;nome_do_arquivo&gt;.tar
+
+  <span class="marrom">● TAR.GZ:</span>
+
+    tar -vzxf &lt;nome_do_arquivo&gt;.tar.gz
+
+  <span class="marrom">● BZ2:</span>
+
+    bunzip &lt;nome_do_arquivo&gt;.bz2
+
+  <span class="marrom">● TAR.BZ2:</span>
+
+    tar -jxvf &lt;nome_do_arquivo&gt;.tar.bz2
+
+================================================================================
+<a name="027.00">027.00</a> <a href="#topo">(topo)</a>                <span class="azul">ZIP E UNZIP - USO BÁSICO</span>
+================================================================================
+
+  <span class="marrom">● ZIP:</span>
+
+  <span class="marrom">● Compactar dois arquivos:</span>
+
+    zip &lt;zipado1&gt;.zip &lt;arquivo1&gt; &lt;arquivo2&gt;
+
+  <span class="marrom">● Como incluir o 'arquivo3' no 'zipado1.zip':</span>
+
+    zip &lt;zipado1&gt;.zip &lt;arquivo3&gt;
+
+  <span class="marrom">● Como criar o 'zipado2.zip' partindo do 'zipado1.zip' e incluindo o 'arquivo4':</span>
+
+    zip &lt;zipado1&gt;.zip &lt;arquivo4&gt; --out &lt;zipado2&gt;.zip
+
+  <span class="marrom">● Como zipar vários arquivos:</span>
+
+    zip &lt;varios_docs&gt;.zip &lt;pasta&gt;/*
+
+  <span class="marrom">● Como zipar um diretório e os arquivos recursivamente:</span>
+
+    zip -r &lt;toda_subpasta&gt;.zip &lt;pasta&gt;/
+
+  <span class="marrom">● UNZIP:</span>
+
+  <span class="marrom">● Descompactar:</span>
+
+    unzip &lt;toda_subpasta&gt;.zip
+
+    unzip &lt;toda_subpasta&gt;.zip -d &lt;pasta_de_destino&gt; (se a pasta não existir será criada)
+
+  <span class="marrom">● Para ver uma saída detalhada do comando:</span>
+
+    unzip -v &lt;toda_subpasta&gt;.zip
+
+  <span class="marrom">● Ver o conteúdo do arquivo compactado, sem descompactá-lo</span>
+
+    unzip -l &lt;toda_subpasta&gt;.zip
+
+================================================================================
+<a name="028.00">028.00</a> <a href="#topo">(topo)</a>                         <span class="azul">7ZIP</span>
+================================================================================
+
+  <span class="marrom">● Compactar em .7z:</span>
+
+    7za a arquivo.7z pasta_ou_arquivo
+
+  <span class="marrom">● Descompactar em .7z:</span>
+
+    7za e arquivo.7z
+
+  <span class="marrom">● Compactar em .zip:</span>
+
+    7za a -tzip arquivo.zip pasta_ou_arquivo
+
+  <span class="marrom">● Descompactar em .zip:</span>
+
+    7za x arquivo.zip
+
+================================================================================
+<a name="029.00">029.00</a> <a href="#topo">(topo)</a>              <span class="azul">YOUTUBE-DL - INSTALL</span>
+================================================================================
+
+  <span class="marrom">● Instalação e atualização:</span>
+
+  <span class="marrom">● Instalação:</span>
+
+  <span class="marrom">○ Entrar no site abaixo:</span>
+
+    <a href="https://github.com/rg3/youtube-dl/releases/">https://github.com/rg3/youtube-dl/releases/</a>
+
+  <span class="marrom">○ Obs:</span> Anotar a data da última versão e substituir na url de instalação/atualização abaixo.
+  <span class="marrom">○ Obs2:</span> No mesmo site também se pode baixar o executável para Windows.
+
+  <span class="marrom">● Para instalar no LINUX:</span>
+
+    sudo curl -L https://github.com/rg3/youtube-dl/releases/download/2018.07.29/youtube-dl -o /usr/local/bin/youtube-dl
+
+  <span class="marrom">● Se vc não tem 'curl', vc pode usar altenativamente 'wget'</span>
+
+    sudo wget https://github.com/rg3/youtube-dl/releases/download/2018.07.29/youtube-dl -O /usr/local/bin/youtube-dl
+
+  <span class="marrom">● E para dar permissão de execução:</span>
+
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+
+  <span class="marrom">● Para instalar no Windows baixar o executável no endereço:</span>
+
+    <a href="https://yt-dl.org/latest/youtube-dl.exe">https://yt-dl.org/latest/youtube-dl.exe</a>
+
+  <span class="marrom">● E colocar no diretório:</span>
+
+    C:\Windows\System32\
+
+  <span class="marrom">● Mais informações no site:</span>
+
+    <a href="https://github.com/rg3/youtube-dl/blob/master/README.md">https://github.com/rg3/youtube-dl/blob/master/README.md</a>
+
+  <span class="marrom">● Atualização:</span>
+
+    sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
+
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+
+    hash -r
+
+  <span class="marrom">● Mais informações no site:</span>
+
+    <a href="https://github.com/rg3/youtube-dl/blob/master/README.md#how-do-i-update-youtube-dl">https://github.com/rg3/youtube-dl/blob/master/README.md#how-do-i-update-youtube-dl</a>
+
+================================================================================
+<a name="030.00">030.00</a> <a href="#topo">(topo)</a>              <span class="azul">YOUTUBE-DLG-GUI - INSTALL</span>
+================================================================================
+
+  <span class="marrom">● Como instalar o youtube-dl-gui no Ubuntu</span>
+
+    sudo add-apt-repository ppa:nilarimogard/webupd8
+
+    sudo apt-get update
+
+  <span class="marrom">● Agora proceda com a instalação:</span>
+
+    sudo apt-get install youtube-dlg
+
+  <span class="marrom">● Como instalar no Debian ←</span>
+
+  <span class="marrom">● Verifique se há uma versão mais atualizada para baixar, antes de prosseguir, </span>
+    <span class="marrom">no site: http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/</span>
+
+    tar xvzf youtube-dlg_0.3.8.orig.tar.gz
+
+    cd youtube-dl-gui-0.3.8/
+
+  <span class="marrom">● Em seguida, instale algumas bibliotecas Python, necessárias para rodar o aplicativo:</span>
+
+    sudo aptitude install python-wxgtk3.0-dev
+
+  <span class="marrom">● Agora, vamos à instalação:</span>
+
+    sudo python setup.py install
+
+    <span class="marrom">… e voilá! O aplicativo já está pronto para ser executado do terminal: youtube-dl-gui.
+    Divirta-se!</span>
+
+================================================================================
+<a name="030.01">030.01</a> <a href="#topo">(topo)</a>                <span class="azul">YOUTUBE-DL - COMANDOS</span>
+================================================================================
+
+  <span class="marrom">● O uso básico é:</span>
+
+    youtube-dl &lt;url video&gt;
+
+  <span class="marrom">● Baixa esse video no máximo de qualidade, podendo ser formato mp4, flv ou mkv.</span>
+
+    youtube-dl https://www.youtube.com/watch?v=dMH0bHeiRNg
+
+  <span class="marrom">● Lista informações sobre o vídeo (extensões e qualidades disponíveis):</span>
+
+    youtube-dl -F https://www.youtube.com/watch?v=4Zc9LNuCsvI
+
+  <span class="marrom">● Baixar na melhor qualidade possivel de video e audio em mp4:</span>
+
+    youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 &lt;url video&gt;
+
+  <span class="marrom">● Baixar em mp4:</span>
+
+    youtube-dl -f[ext=mp4] &lt;url video&gt;
+
+  <span class="marrom">● Baixar e converter pra MP3:</span>
+
+    youtube-dl -x --audio-format mp3 &lt;url video&gt;
+
+  <span class="marrom">● Site <strong>(ULIST)</strong> que cria arquivo txt com lista das url's dos vídeos:</span>
+
+    https://guihkx.github.io/ulist/
+
+    youtube-dl -a playlist.txt -c -o "%(autonumber)s_-_%(title)s.%(ext)s" -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4
+
+    youtube-dl -a playlist.txt -c -o "%(autonumber)s_-_%(title)s.%(ext)s" -f [ext=mp4]
+
+    youtube-dl -a playlist.txt -c -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4
+
+    youtube-dl -a playlist.txt -c -f [ext=mp4]
+
+================================================================================
+<a name="031.00">031.00</a> <a href="#topo">(topo)</a>   <span class="azul">MKVTOOLNIX NO UBUNTU/FEDORA</span>
+================================================================================
+
+  <span class="marrom">● No ubuntu:</span>
+
+    sudo apt-get update
+
+    sudo apt-get install mkvtoolnix mkvtoolnix-gui
+
+  <span class="marrom">● Depois, se precisar desinstalar o programa, use o comando abaixo:</span>
+
+    sudo apt-get remove mkvtoolnix mkvtoolnix-gui
+
+  <span class="marrom">● No fedora:</span>
+
+    su -c 'dnf install mkvtoolnix mkvtoolnix-gui'
+
+  <span class="marrom">● Caso precise desinstalar, use o comando abaixo:</span>
+
+    su -c 'dnf remove mkvtoolnix mkvtoolnix-gui'
+
+================================================================================
+<a name="032.00">032.00</a> <a href="#topo">(topo)</a>                  <span class="azul">EXTRAIR AUDIO DE VÍDEO</span>
+================================================================================
+
+  mplayer -vo null -dumpaudio -dumpfile <audio.mp3> <video.avi>
+
+  <span class="marrom">○ Obs.: Caso não tenha o 'mplayer':</span>
+
+        sudo apt-get install mplayer
+
+================================================================================
+<a name="033.00">033.00</a> <a href="#topo">(topo)</a>             <span class="azul">EXTRAIR AUDIO DE VÍDEO COM AVCONV</span>
+================================================================================
+  <span class="marrom">● Instale o avconv:</span>
+
+    sudo apt-get install libav-tools
+
+  <span class="marrom">● E para converter use o comando:</span>
+
+    avconv -i video.mp4 -c:a libmp3lame -b:a 128k -vn som2.mp3
+
+  <span class="marrom">● Um 'shell script' para facilitar (pode chamar mp4tomp3.sh):</span>
+
+    #!/bin/bash
+
+    avconv -i $1 -c:a libmp3lame -b:a 128k -vn $2
+
+================================================================================
+<a name="034.00">034.00</a> <a href="#topo">(topo)</a>                <span class="azul">INSTALAR SOUND CONVERTER</span>
+================================================================================
+
+  sudo apt-get update
+
+  sudo apt-get install soundconverter
+
+  sudo apt-get install gstreamer1.0-plugins-ugly
+
+================================================================================
+<a name="035.00">035.00</a> <a href="#topo">(topo)</a>             <span class="azul">VIRTUALBOX INSTALAÇÃO NO UBUNTU</span>
+================================================================================
+
+  <span class="marrom">● Verifique a versão do ubuntu:</span>
+
+    cat /etc/os-release
+
+  <span class="marrom">● Baixe o virtualbox no site:</span>
+
+    www.virtualbox.org
+
+  <span class="marrom">● No linux Live execute os comandos:</span>
+
+    sudo apt-get update
+    sudo apt-get install libcurl3
+
+  <span class="marrom">● Depois de instalado baixe, no mesmo site, e instale o 'Virtualbox Extension Pack'.</span>
+
+  <span class="marrom">● Adicionando seu usuário ao grupo 'vboxusers'.</span>
+
+  <span class="marrom">● Verificando se o seu usuário pertence ao grupo 'vboxusers':</span>
+
+    groups &lt;usuário&gt;
+
+  <span class="marrom">● O resultado deverá ser algo similar ao abaixo:</span>
+
+    &lt;usuário&gt;: users vboxusers
+
+  <span class="marrom">● Se nesta linha incluir o 'vboxusers' já está tudo certo.</span>
+
+  <span class="marrom">● Caso não, vamos adicionar seu usuário ao grupo com o comando:</span>
+
+    sudo usermod &lt;usuário&gt; -a -G vboxusers
+
+     <span class="marrom">○ Ou</span>
+
+    sudo adduser &lt;usuário&gt; vboxusers
+
+  <span class="marrom">● Após isso, faça 'logoff' ou reinicie o computador.</span>
+
+  <span class="marrom">● Agora deverá ser possível reconhecer dispositivos conectados ao linux no</span>
+    <span class="marrom">sistema hospedeiro.</span>
+
+    <span class="marrom">Obs.: Caso seja necessário instale as dependências:</span>
+
+    sudo apt install dkms build-essential linux-headers-$(uname -r)
+
+================================================================================
+<a name="036.00">036.00</a> <a href="#topo">(topo)</a>                <span class="azul">VIRTUALBOX NO UBUNTU GNOME</span>
+================================================================================
+
+  <span class="marrom">● Instalar 'guest additions' do 'VirtualBox' no ubuntu:</span>
+
+  <span class="marrom">● Instalar o 'linux-headers':</span>
+
+    sudo apt install linux-headers-$(uname -r)
+
+  <span class="marrom">● Instalar 'virtualbox-guest-dkms':</span>
+
+    sudo apt install virtualbox-guest-dkms
+
+================================================================================
+<a name="037.00">037.00</a> <a href="#topo">(topo)</a>   <span class="azul">VIRTUALBOX - MOTANDO PASTA COMPARTILHADA WINDOWS NO LINUX</span>
+================================================================================
+
+  sudo mount -t vboxsf host /mnt/win
+
+================================================================================
+<a name="038.00">038.00</a> <a href="#topo">(topo)</a>                 <span class="azul">XAMPP - SITE P/ DOWNLOAD</span>
+================================================================================
+
+  <a href="https://www.apachefriends.org/pt_br/download.html">https://www.apachefriends.org/pt_br/download.html</a>
+
+================================================================================
+<a name="039.00">039.00</a> <a href="#topo">(topo)</a>                    <span class="azul">XAMPP - COMANDOS</span>
+================================================================================
+
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">COMANDO</span>               |   <span class="marrom">DESCRIÇÃO</span>                              |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">start</span>                 |   Inicia o xampp                         |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">stop</span>                  |   Para o xampp                           |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">restart</span>               |   Reinicia o xampp                       |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">startapache</span>           |   Inicia apenas o Apache                 |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">startssl</span>              |   Inicia o suporte a ssl do              |
+  |                       |   apache. Este comando ativa             |
+  |                       |   permanentemente o suporte              |
+  |                       |   a ssl, mesmo reiniciando o             |
+  |                       |   xampp, o ssl continuará                |
+  |                       |   ativa.                                 |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">startmysql</span>            |   Inicia apenas o banco de               |
+  |                       |   dados MySQL.                           |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">startftp</span>              |   Inicia o servidor ProFTP.              |
+  |                       |   Via FTP você poderá enviar             |
+  |                       |   arquivo para o seu servidor            |
+  |                       |   (usuário)                              |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">stopapache</span>            |   Para o apache                          |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">stopssl</span>               |   Para o suporte a ssl do apache. Este   |
+  |                       |   comando desativa permanentemente o     |
+  |                       |   suporte a ssl, mesmo reiniciando o     |
+  |                       |   xampp, o ssl continuará desativado.    |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">stopmysql</span>             |   Para o banco de dados MySQL.           |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">stopftp</span>               |   Para o servidor ProFPD.  Este comando  |
+  |                       |   desativa o ProFPD permanentemente      |
+  |                       |   mesmo reiniciando o xampp futuramente  |
+  |                       |   , o FTP continuará desativado.         |
+  +-----------------------+------------------------------------------+
+  | <span class="marrom">security</span>              |   Inicia uma pequena checagem de         |
+  |                       |   seguraça.                              |
+  +-----------------------+------------------------------------------+
+
+================================================================================
+<a name="040.00">040.00</a> <a href="#topo">(topo)</a>                  <span class="azul">ALTERAR TIMEZONE NO PHP</span>
+================================================================================
+
+  <span class="marrom">● Editar o arquivo conforme abaixo:</span>
+
+    sudo gvim /opt/lampp/etc/php.ini
+
+  <span class="marrom">● Descomentar o trecho abaixo:</span>
+
+    ;date.timezone
+
+  <span class="marrom">● Alterar para ficar como abaixo:</span>
+
+    date.timezone = America/Sao_Paulo
+
+================================================================================
+<a name="041.00">041.00</a> <a href="#topo">(topo)</a>        <span class="azul">XAMPP - MUDAR DIRETÓRIO PADRÃO DOS PROJETOS</span>
+================================================================================
+
+  <span class="marrom">● Por exemplo mudaremos para:</span>
+
+    /home/&lt;username&gt;/www
+
+  <span class="marrom">● No diretório: '/opt/lampp/etc', editar o arquivo 'httpd.conf':</span>
+
+    sudo gvim /opt/lampp/etc/httpd.conf
+
+  <span class="marrom">● E procurar por:</span>
+
+    DocumentRoot "/opt/lampp/htdocs"
+
+  <span class="marrom">● Substituir pela nova localização:</span>
+
+    DocumentRoot "/home/&lt;username&gt;/www"
+
+  <span class="marrom">● Deve estar logo abaixo o seguinte:</span>
+
+    &lt;Directory "/opt/lampp/htdocs"&gt;
+
+  <span class="marrom">● Substituir também pela nova localização:</span>
+
+    &lt;Directory "/home/&lt;username&gt;/www"&gt;
+
+================================================================================
+<a name="042.00">042.00</a> <a href="#topo">(topo)</a>       <span class="azul">PDO - CLASSE QUE GERÊNCIA BANCO DE DADOS (SITE)</span>
+================================================================================
+
+  <a href="https://pt.stackoverflow.com/questions/97076/select-pdo-com-oo">https://pt.stackoverflow.com/questions/97076/select-pdo-com-oo</a>
+
+================================================================================
+<a name="043.00">043.00</a> <a href="#topo">(topo)</a>                     <span class="azul">DICAS SOBRE PHP</span>
+================================================================================
+
+  <a href="www.mauricioprogramador.com.br/posts/exportando-dados-mysql-para-excel-com-php">www.mauricioprogramador.com.br/posts/exportando-dados-mysql-para-excel-com-php</a>
+
+================================================================================
+<a name="044.00">044.00</a> <a href="#topo">(topo)</a>             <span class="azul">CURSO DE PHP ORIENTADO A OBJETOS</span>
+================================================================================
+
+  <a href="cafeesoftware.com/curso-de-php-orientado-a-objetos/">cafeesoftware.com/curso-de-php-orientado-a-objetos/</a>
+
+================================================================================
+<a name="045.00">045.00</a> <a href="#topo">(topo)</a>                    <span class="azul">PYTHON - SERVIDOR</span>
+================================================================================
+
+  <span class="marrom">● Com Python 2:</span>
+
+  <span class="marrom">● Na porta 8000:</span>
+
+    python -m SimpleHTTPServer
+
+  <span class="marrom">● Em uma porta específica:</span>
+
+    python -m SimpleHTTPServer 8080
+
+  <span class="marrom">● Com Python 3:</span>
+
+  <span class="marrom">● Na porta 8000:</span>
+
+    python3 -m http.server
+
+  <span class="marrom">● Em uma porta específica:</span>
+
+    python3 -m http.server 8080
+
+================================================================================
+<a name="046.00">046.00</a> <a href="#topo">(topo)</a>                     <span class="azul">PHP - SERVIDOR</span>
+================================================================================
+
+  php -s localhost:8080
+
+================================================================================
+<a name="047.00">047.00</a> <a href="#topo">(topo)</a>             <span class="azul">GETBOOTSTRAPT - SITE OFICIAL EM PORTUGUÊS</span>
+================================================================================
+
+  <a href="http://getbootstrap.com.br/docs/3.3/css/">http://getbootstrap.com.br/docs/3.3/css/</a>
+
+================================================================================
+<a name="048.00">048.00</a> <a href="#topo">(topo)</a>                   <span class="azul">A GRID DO BOOTSTRAP</span>
+================================================================================
+
+  <a href="https://rodrigomilano.com.br/a-grid-do-bootstrap-tudo-que-voce-sempre-quis-saber-mas-nao-tinha-a-quem-perguntar/"></a>
+
+================================================================================
+<a name="049.00">049.00</a> <a href="#topo">(topo)</a>                     <span class="azul">TECNOLOGIAS WEB</span>
+================================================================================
+
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input</a>
+
+  <span class="marrom">○ Obs.: Documentação dos elementos de html.</span>
+
+================================================================================
+<a name="050.00">050.00</a> <a href="#topo">(topo)</a>       <span class="azul">SWEET HOME 3D (SOFTWARE DE DESIGN DE AMBIENTES)</span>
+================================================================================
+
+  <a href="www.sweethome3d.com">www.sweethome3d.com</a>
+
+================================================================================
+<a name="051.00">051.00</a> <a href="#topo">(topo)</a>                         <span class="azul">LIBRE CAD</span>
+================================================================================
+
+  <a href="http://librecad.org/cms/home.html">http://librecad.org/cms/home.html</a>
+
+================================================================================
+<a name="052.00">052.00</a> <a href="#topo">(topo)</a>                          <span class="azul">FREECAD</span>
+================================================================================
+
+  <a href="www.freecadweb.org">www.freecadweb.org</a>
+
+================================================================================
+<a name="053.00">053.00</a> <a href="#topo">(topo)</a>                  <span class="azul">ALTERNATIVAS AO AUTOCAD</span>
+================================================================================
+
+  <a href="www.linuxdescomplicado.com.br/2016/06/alternativas-open-source-para-o-autocad.html">www.linuxdescomplicado.com.br/2016/06/alternativas-open-source-para-o-autocad.html</a>
+
+================================================================================
+<a name="054.00">054.00</a> <a href="#topo">(topo)</a>                       <span class="azul">MONO - SITE</span>
+================================================================================
+
+  <a href="www.mono-project.com">www.mono-project.com</a>
+
+================================================================================
+<a name="055.00">055.00</a> <a href="#topo">(topo)</a>      <span class="azul">MONODEVELOP COMPLETO PARA COMPILAR E GERAR PACOTE</span>
+================================================================================
+
+  sudo apt install mono-complete
+
+================================================================================
+<a name="056.00">056.00</a> <a href="#topo">(topo)</a>                      <span class="azul">LAZARUS - SITE</span>
+================================================================================
+
+  <a href="www.lazarus-ide.org">www.lazarus-ide.org</a>
+
+================================================================================
+<a name="057.00">057.00</a> <a href="#topo">(topo)</a>                <span class="azul">LIVECODE - IDE LINGUAGEM GO</span>
+================================================================================
+
+  <a href="https://livecode.com/account/products/livecode-community">https://livecode.com/account/products/livecode-community</a>
+<!--
+  <span class="marrom">USER: </span>alan2calazans@gmail.com
+  <span class="marrom">PASSWORD: </span>kronos40
+-->
+================================================================================
+<a name="058.00">058.00</a> <a href="#topo">(topo)</a>                   <span class="azul">VISUAL STUDIO CODE</span>
+================================================================================
+
+  <a href="https://code.visualstudio.com">https://code.visualstudio.com</a>
+
+  <span class="marrom">○ Obs.: Caso ocorra erro de falta da biblioteca 'libgconf-2.so.4G' basta instalar
+        conforme abaixo:</span>
+
+        sudo apt install libgconf-2-4
+
+================================================================================
+<a name="059.00">059.00</a> <a href="#topo">(topo)</a>                    <span class="azul">BABEL STANDALONE</span>
+================================================================================
+
+  <a href="https://github.com/babel/babel-standalone">https://github.com/babel/babel-standalone</a>
+
+  <span class="marrom">○ Obs.: Baixei o transpilador 'babel.min.js' no endereço:</span>
+
+    <a href="https://unpkg.com/babel-standalone@6/babel.min.js">https://unpkg.com/babel-standalone@6/babel.min.js</a>
+
+================================================================================
+<a name="060.00">060.00</a> <a href="#topo">(topo)</a>                      <span class="azul">REACT (SITE)</span>
+================================================================================
+
+  <a href="https://facebook.github.io/react/">https://facebook.github.io/react/</a>
+
+================================================================================
+<a name="061.00">061.00</a> <a href="#topo">(topo)</a>                   <span class="azul">BLUEFISH - INSTALL</span>
+================================================================================
+
+  sudo add-apt-repository ppa:klaus-vormweg/bluefish
+  sudo apt-get update
+
+  <span class="marrom">● Agora abra o synaptic e instale o 'bluefish'</span>
+
+================================================================================
+<a name="062.00">062.00</a> <a href="#topo">(topo)</a>               <span class="azul">VIM - IDENTAR BLOCO DE TEXTO</span>
+================================================================================
+
+  <span class="marrom">● indenta duas vezes as 17 linhas da 12 a 28:</span>
+
+    :12,28&gt;&gt;
+
+    ou
+
+    1. Posicione o cursor sobre a linha
+    2. Tire o ViM do modo edição, teclando "ESC"
+    3. Pressione: "Shift+V"
+    4. Mova o cursor com as setas se seleção até a linha a ser identada
+    5. Pressione: "Shift+&gt;"
+
+================================================================================
+<a name="063.00">063.00</a> <a href="#topo">(topo)</a>                    <span class="azul">Xfce Theme Manager</span>
+================================================================================
+
+  <span class="marrom">● Instalando o Xfce Theme Manager:</span>
+
+    sudo add-apt-repository ppa:rebuntu16/other-stuff
+
+    sudo apt-get update
+
+    sudo apt-get install xfce-theme-manager
+
+  <span class="marrom">● Desinstalando o Xfce Theme Manager:</span>
+
+    sudo add-apt-repository ppa:rebuntu16/other-stuff --remove
+
+    sudo apt-get remove xfce-theme-manager
+
+    sudo apt-get autoremove
+
+================================================================================
+<a name="064.00">064.00</a> <a href="#topo">(topo)</a>                <span class="azul">ZRAM - Otimização do SWAP</span>
+================================================================================
+
+  <span class="marrom">● Instalando o ZRAM:</span>
+
+    sudo apt-get install zram-config
+
+  <span class="marrom">● Depois disso reinicie o computador e rode o comando abaixo para ver se tudo deu certo:</span>
+
+    cat /proc/swaps
+
+    <span class="marrom">○ O comando acima deve retornar algo como (indicando que esta tudo ok):</span>
+<span class="marrom">
+      Filename        Type       Size  Used  Priority
+      /dev/sda5     partition  3617788   0     -1
+      /dev/zram0    partition  443188    0      5
+      /dev/zram1    partition  443188    0      5
+      /dev/zram2    partition  443188    0      5
+      /dev/zram3    partition  443188    0      5
+</span>
+  <span class="marrom">● Para desinstalar:</span>
+
+    sudo apt-get purge zram-config
+================================================================================
+<a name="065.00">065.00</a> <a href="#topo">(topo)</a>         <span class="azul">PDF - COMO JUNTAR E DIVIDIR ARQUIVOS</span>
+================================================================================
+
+  <span class="marrom">● Instalando o PDFTK:</span>
+
+    sudo apt-get install pdftk
+
+  <span class="marrom">● Para unir arquivos PDF:</span>
+
+    pdftk arquivo1.pdf arquivo2.pdf output arquivo_final.pdf
+
+  <span class="marrom">● Agora para extrair páginas de um arquivo PDF, utilize o comando a seguir.<br>&nbsp;&nbsp;&nbsp;&nbsp;Claro, substitua A1 pelo numero da página do arquivo PDF original. Por exemplo,<br>&nbsp;&nbsp;&nbsp;&nbsp;se você quiser pegar a quinta página utilize A5. Se quiser um intervalo, como<br>&nbsp;&nbsp;&nbsp;&nbsp;por exemplo da quarta até a sexta página, informe A4-6:</span>
+
+    pdftk A=arquivo.pdf cat A1 output pagina1.pdf
+
+  <span class="marrom">● Também é possível utilizar mais de um arquivo por vez e juntar em um único<br>&nbsp;&nbsp;&nbsp;&nbsp;arquivo final, como no exemplo a seguir:</span>
+
+    pdftk A=arquivo1.pdf B=arquivo1.pdf cat A1-7 B2 output arquivo_final.pdf
+
+  <span class="marrom">● Se você preferir usar uma interface gráfica, use o comando a seguir para<br>&nbsp;&nbsp;&nbsp;&nbsp;instalar o aplicativo PDF Chain:</span>
+
+    sudo apt-get install pdfchain
+
+  <span class="marrom">● Uma vez instalado, inicie o programa digitando no Dash ou em um terminal):<br>&nbsp;&nbsp;&nbsp;&nbsp;pdfchain</span>
+
+  <span class="marrom">● O pdftk tem muitas outras funcionalidades, como a capacidade de rotacionar<br>&nbsp;&nbsp;&nbsp;&nbsp;páginas, encriptar e decriptar arquivos, adicionar marcas d’água e muito mais.</span>
+
+  <span class="marrom">● Para conhecer todas as suas opções disponíveis, digite o seguinte comando:</span>
+
+    pdftk --help
+
+================================================================================
+<a name="066.00">066.00</a> <a href="#topo">(topo)</a>       <span class="azul">FEDORA - Guia de pós-instalação do Fedora 28</span>
+================================================================================
+
+  <span class="marrom">● Site:</span>
+
+    <a href="https://www.blogopcaolinux.com.br/2018/05/Guia-pos-instalacao-Fedora-28-Workstation.html">https://www.blogopcaolinux.com.br/2018/05/Guia-pos-instalacao-Fedora-28-Workstation.html</a>
+
+================================================================================
+<a name="067.00">067.00</a> <a href="#topo">(topo)</a>         <span class="azul">FEDORA - MONTAR ANDROID AUTOMATICAMENTE</span>
+================================================================================
+
+  <span class="marrom">● Instalar:</span>
+
+    su -c 'dnf install gvfs-mtp'
+
+================================================================================
+<a name="068.00">068.00</a> <a href="#topo">(topo)</a>             <span class="azul">FEDORA - INSTALAR LIBREOFFICE</span>
+================================================================================
+
+  <span class="marrom">● Baixar libreoffice:</span>
+
+  <span class="marrom">● 64 bits: (baixe tb os pcts: Translated e Help)</span>
+
+    <a href="https://www.libreoffice.org/download/download/?type=rpm-x86_64&lang=pt-BR">https://www.libreoffice.org/download/download/?type=rpm-x86_64&lang=pt-BR</a>
+
+  <span class="marrom">● Baixar libreoffice:</span>
+
+  <span class="marrom">● 32 bits: (baixe tb os pcts: Translated e Help)</span>
+
+    <a href="https://www.libreoffice.org/download/download/?type=rpm-x86&lang=pt-BR">https://www.libreoffice.org/download/download/?type=rpm-x86&lang=pt-BR</a>
+
+  <span class="marrom">● Extraia o pacote de instalação do LibreOffice com:</span>
+
+    tar zxvf LibreOffice*rpm.tar.gz && mv LibreOffice*rpm/ LibreOffice
+
+  <span class="marrom">● Acesse a pasta onde estão armazenados os pacotes .RPM:</span>
+
+    cd LibreOffice/RPMS/
+
+  <span class="marrom">● E instale-os com o comando:</span>
+
+    su -c 'dnf install *.rpm'
+
+  <span class="marrom">● Deixando o LibreOffice totalmente em português:</span>
+
+  <span class="marrom">● Extraia o pacote de instalação do LibreOffice com:</span>
+
+    tar zxvf LibreOffice*rpm_langpack*.tar.gz && mv LibreOffice*rpm_langpack*/ LibreOffice-langpack
+
+  <span class="marrom">● Acesse a pasta onde estão armazenados os pacotes .RPM:</span>
+
+    cd LibreOffice-langpack/RPMS/
+
+  <span class="marrom">● E instale-os com o comando:</span>
+
+    su -c 'dnf install *.rpm'
+
+  <span class="marrom">● Por último, acesse a pasta onde baixou o pacote de ajuda offline do LibreOffice:</span>
+
+    tar zxvf LibreOffice*rpm_helppack*.tar.gz && mv LibreOffice*helppack*/ LibreOffice-helppack
+
+  <span class="marrom">● Acesse a pasta onde estão armazenados os pacotes .RPM:</span>
+
+    cd LibreOffice-helppack/RPMS/
+
+  <span class="marrom">● E instale-os com o comando:</span>
+
+    su -c 'dnf install *.rpm'
+
+================================================================================
+<a name="069.00">069.00</a> <a href="#topo">(topo)</a>              <span class="azul">FEDORA - ATALHOS NO MENU</span>
+================================================================================
+
+  <span class="marrom">● Copiar atalho para a pasta:</span>
+
+  su -c 'cp iron_64bit.desktop /usr/share/applications/'
+
+  <span class="marrom">● Entrar na pasta:</span>
+
+  cd /usr/share/applications/
+
+  <span class="marrom">● Mudar permissões do atalho:</span>
+
+  su -c 'chmod 644 iron_64bit.desktop'
+
+================================================================================
+<a name="070.00">070.00</a> <a href="#topo">(topo)</a>        <span class="azul">FEDORA - PRINTSCREEN DE REGIÃO DA TELA</span>
+================================================================================
+
+  <span class="marrom">● No console digite o nome da aplicação:</span>
+
+    xfce4-screenshooter
+
+================================================================================
+<a name="070.01">070.01</a> <a href="#topo">(topo)</a>        <span class="azul">FEDORA - REMOVER REPÓSITORIOS COM PROBLEMA</span>
+================================================================================
+
+  <span class="marrom">● Liste o caminho abaixo:</span>
+
+    ls /etc/yum.repos.d/
+
+  <span class="marrom">○ Exemplo de saída:</span>
+
+    fedora-cisco-openh264.repo   rpmfusion-free-updates.repo
+    fedora.repo                  rpmfusion-free-updates-testing.repo
+    fedora-updates.repo          rpmfusion-nonfree.repo
+    fedora-updates-testing.repo  rpmfusion-nonfree-updates.repo
+    fedy.repo                    rpmfusion-nonfree-updates-testing.repo
+    rpmfusion-free.repo          virtualbox.repo
+
+  <span class="marrom">● Basta usar o comando 'rm' e o nome do repositório em questão:</span>
+
+  <span class="marrom">○ Exemplo:</span>
+
+    # rm /etc/yum.repos.d/virtualbox.repo
+
+================================================================================
+<a name="071.00">071.00</a> <a href="#topo">(topo)</a>                <span class="azul">FFMPEG - CORTAR MP3</span>
+================================================================================
+
+  <span class="marrom">● Comando:</span>
+
+    $ ffmpeg -ss 01:31:00 -t 00:11:00 -i input.mp3 -acodec copy output.mp3
+
+    <strong>-ss</strong> tempo onde inicia o recorte
+    <strong>-t</strong> quanto tempo a partir do início é para ser recortado.
+
+  <span class="marrom">● E depois, se necessário, comprimir o arquivo sem perder em muita qualidade
+    (de 192k --> 64k) podemos utilizar o seguinte programa e seus argumentos:</span>
+
+    $ ffmpeg -i input.mp3 -acodec libmp3lame -ac 2 -ab 64k -ar 44100 output.mp3
+
+================================================================================
+<a name="072.00">072.00</a> <a href="#topo">(topo)</a>                  <span class="azul">MAKE UNINSTALL</span>
+================================================================================
+
+  <span class="marrom">● Muitas vezes o Makefile que acompanha o código fonte tem a regra uninstall.<br>&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, rodar o comando no diretório do fonte pode resolver:</span>
+
+    # make uninstall
+
+  <span class="marrom">● Caso você não tenha essa sorte, você pode usar o comando:</span>
+
+    # make -n install
+
+  <span class="marrom">○ que mostra os comandos que seriam executados pela regra install (mas não os<br>&nbsp;&nbsp;&nbsp;&nbsp;executa). Com eles, você pode analisar e remover manualmente as alterações <br>&nbsp;&nbsp;&nbsp;&nbsp;que foram feitas.</span>
+
+</pre>
+  </div>
 </body>
 </html>
