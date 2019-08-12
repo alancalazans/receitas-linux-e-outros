@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Receitas</title>
-	<link rel="icon" type="image/png" href="assets/img/ico/linux.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/ico/linux.png">
 
 	<style type="text/css">
 
@@ -25,6 +25,8 @@
 
 		.marrom { color: brown; font-weight: bold; }
 
+		.purpura { color: #800080; font-weight: bold; }
+
 	</style>
 </head>
 <body>
@@ -35,13 +37,16 @@
 ================================================================================
 
   <a href="#001.00">001.00</a> <span class="marrom">●</span> UBUNTU DOWNLOAD DISTRIBUIÇÕES
-  <a href="#001.01">001.01</a> <span class="marrom">●</span> LINUX LITE - DOWNLOAD
+  <a href="#001.01">001.01</a> <span class="marrom">●</span> UBUNTU O QUE FAZER DEPOIS DE INSTALAR
+  <a href="#001.02">001.02</a> <span class="marrom">●</span> UBUNTU REPOSITÓRIOS PPA
+  <a href="#001.03">001.03</a> <span class="marrom">●</span> LINUX LITE - DOWNLOAD
   <a href="#002.00">002.00</a> <span class="marrom">●</span> THEMES PARA GTK
   <a href="#002.01">002.01</a> <span class="marrom">●</span> XFCE THEME MANAGER - INSTALAR NO UBUNTU
   <a href="#003.00">003.00</a> <span class="marrom">●</span> WALLPAPERS
   <a href="#004.00">004.00</a> <span class="marrom">●</span> UBUNTU GNOME
   <a href="#005.00">005.00</a> <span class="marrom">●</span> LINUX LITE - SCREENSAVER
   <a href="#006.00">006.00</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL VERSÃO DO UBUNTU
+  <a href="#006.01">006.01</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL A ARQUITETURA DE INTERFACE DO UBUNTU  
   <a href="#007.00">007.00</a> <span class="marrom">●</span> UNINSTALL PROGRAMA E CORRIGINDO PACOTES DE INSTALAÇÃO
   <a href="#008.00">008.00</a> <span class="marrom">●</span> COMANDOS DE LIMPESA GERAL
   <a href="#008.01">008.01</a> <span class="marrom">●</span> BLEACHBIT PROGRAMA P/ LIMPESA GERAL
@@ -112,7 +117,10 @@
   <a href="#070.00">070.00</a> <span class="marrom">●</span> FEDORA - PRINTSCREEN DE REGIÃO DA TELA
   <a href="#070.01">070.01</a> <span class="marrom">●</span> FEDORA - REMOVER REPÓSITORIOS COM PROBLEMA
   <a href="#071.00">071.00</a> <span class="marrom">●</span> FFMPEG - CORTAR MP3
+  <a href="#071.01">071.01</a> <span class="marrom">●</span> FFMPEG - INSERIR LEGENDA
+  <a href="#071.02">071.02</a> <span class="marrom">●</span> FFMPEG - ADICIONAR NOVO AUDIO AO VÍDEO
   <a href="#072.00">072.00</a> <span class="marrom">●</span> MAKE UNINSTALL
+  <a href="#073.00">073.00</a> <span class="marrom">●</span> BAIXAR SITE INTEIRO COM WGET
 
 ================================================================================
 <a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
@@ -121,7 +129,34 @@
   <a href="http://releases.ubuntu.com">http://releases.ubuntu.com</a>
 
 ================================================================================
-<a name="001.01">001.01</a> <a href="#topo">(topo)</a>                <span class="azul">LINUX LITE - DOWNLOAD</span>
+<a name="001.01">001.01</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU O QUE FAZER DEPOIS DE INSTALAR</span>
+================================================================================
+
+  <span class="marrom">● Atualize seu sistema</span>
+
+  sudo apt update && sudo apt upgrade -y
+
+  <span class="marrom">● Instalar manualmente os codecs multimídia digitando o
+  comando abaixo no terminal:</span>
+
+  sudo apt install mint-meta-codecs
+
+  <span class="marrom">● Embora o Linux Mint 19 Tara seja baseado no Ubuntu 18.04, o formato Snap
+  não está habilitado por padrão e não podemos usar aplicativos no formato snap.
+  Isso é resolvido executando o seguinte comando:</span>
+
+  sudo apt install snapd
+
+================================================================================
+<a name="001.02">001.02</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU REPOSITÓRIOS PPA</span>
+================================================================================
+
+  <span class="marrom">● Caminho onde estão os repositórios:</span>
+
+  /etc/apt/sources.list.d/
+
+================================================================================
+<a name="001.03">001.03</a> <a href="#topo">(topo)</a>                <span class="azul">LINUX LITE - DOWNLOAD</span>
 ================================================================================
 
   <a href="https://sourceforge.net/projects/linuxlite/files/">https://sourceforge.net/projects/linuxlite/files/</a>
@@ -191,6 +226,12 @@
   cat /etc/os-release
 
   cat /etc/issue
+
+================================================================================
+<a name="006.01">006.01</a> <a href="#topo">(topo)</a>  <span class="azul">COMANDO PARA SABER QUAL A ARQUITETURA DE INTERFACE DO UBUNTU</span>
+================================================================================
+
+  echo $XDG_CURRENT_DESKTOP
 
 ================================================================================
 <a name="007.00">007.00</a> <a href="#topo">(topo)</a>  <span class="azul">UNINSTALL PROGRAMA E CORRIGINDO PACOTES DE INSTALAÇÃO</span>
@@ -591,6 +632,11 @@
 
         java -version
 
+  <span class="marrom">Escolhendo java default:</span>
+  <span class="marrom">Digite:</span>
+
+        sudo update-alternatives --config java
+
 ================================================================================
 <a name="020.00">020.00</a> <a href="#topo">(topo)</a>           <span class="azul">ADOBE FLASH P/ FIREFOX E CHROMIUM</span>
 ================================================================================
@@ -700,6 +746,10 @@
 
     gzip -9 &lt;nome_do_arquivo&gt;.tar
 
+  <span class="marrom">● TAR.XZ:</span>
+
+    tar -Jcf &lt;nome_do_arquivo&gt;.tar.xz &lt;nome_do_arquivo&gt;
+
   <span class="marrom">● BZ2:</span>
 
     bzip2 &lt;nome_do_arquivo&gt;.bz2
@@ -720,7 +770,11 @@
 
   <span class="marrom">● TAR.GZ:</span>
 
-    tar -vzxf &lt;nome_do_arquivo&gt;.tar.gz
+    tar -zxvf &lt;nome_do_arquivo&gt;.tar.gz
+
+  <span class="marrom">● TAR.XZ:</span>
+
+    tar -Jxf &lt;nome_do_arquivo&gt;.tar.xz
 
   <span class="marrom">● BZ2:</span>
 
@@ -847,35 +901,24 @@
 <a name="030.00">030.00</a> <a href="#topo">(topo)</a>              <span class="azul">YOUTUBE-DLG-GUI - INSTALL</span>
 ================================================================================
 
-  <span class="marrom">● Como instalar o youtube-dl-gui no Ubuntu</span>
+  <span class="marrom">● A página do projeto tem as instruções para instalar:</span>
 
-    sudo add-apt-repository ppa:nilarimogard/webupd8
+    https://github.com/MrS0m30n3/youtube-dl-gui
 
-    sudo apt-get update
+  <span class="marrom">● Orienta a fazer os seguintes passos (no caso do Linux):</span>
 
-  <span class="marrom">● Agora proceda com a instalação:</span>
+   → Baixe e extraia o fonte
+   → Entre no diretório extraído
+   → Execute a instalação: <strong>python setup.py install</strong>
 
-    sudo apt-get install youtube-dlg
+    <span class="marrom">○ Com relação ao último passo é altamente recomendado fazer:</span>
 
-  <span class="marrom">● Como instalar no Debian ←</span>
+       <strong>python setup.py install --record files.txt</strong>
 
-  <span class="marrom">● Verifique se há uma versão mais atualizada para baixar, antes de prosseguir, </span>
-    <span class="marrom">no site: http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/</span>
+    <span class="marrom">○ Assim podemos desinstalar (caso necessário) da seguinte forma:</span>
 
-    tar xvzf youtube-dlg_0.3.8.orig.tar.gz
-
-    cd youtube-dl-gui-0.3.8/
-
-  <span class="marrom">● Em seguida, instale algumas bibliotecas Python, necessárias para rodar o aplicativo:</span>
-
-    sudo aptitude install python-wxgtk3.0-dev
-
-  <span class="marrom">● Agora, vamos à instalação:</span>
-
-    sudo python setup.py install
-
-    <span class="marrom">… e voilá! O aplicativo já está pronto para ser executado do terminal: youtube-dl-gui.
-    Divirta-se!</span>
+       <strong>sudo gnome-terminal</strong> <span class="purpura">(para abrir terminal como super-usuário)</span> 
+       <strong>cat files.txt | xargs rm -rf</strong> <span class="purpura">(para remover os arquivos gravados pela etapa anterior)</span>
 
 ================================================================================
 <a name="030.01">030.01</a> <a href="#topo">(topo)</a>                <span class="azul">YOUTUBE-DL - COMANDOS</span>
@@ -1188,7 +1231,7 @@
 <a name="046.00">046.00</a> <a href="#topo">(topo)</a>                     <span class="azul">PHP - SERVIDOR</span>
 ================================================================================
 
-  php -s localhost:8080
+  php -S localhost:8080
 
 ================================================================================
 <a name="047.00">047.00</a> <a href="#topo">(topo)</a>             <span class="azul">GETBOOTSTRAPT - SITE OFICIAL EM PORTUGUÊS</span>
@@ -1337,26 +1380,40 @@
 <a name="064.00">064.00</a> <a href="#topo">(topo)</a>                <span class="azul">ZRAM - Otimização do SWAP</span>
 ================================================================================
 
-  <span class="marrom">● Instalando o ZRAM:</span>
+  <span class="marrom">● Como instalar zRam no Ubuntu:</span>
 
     sudo apt-get install zram-config
 
-  <span class="marrom">● Depois disso reinicie o computador e rode o comando abaixo para ver se tudo deu certo:</span>
+  <span class="marrom">○ Isto é o suficiente.</span>
+
+  <span class="marrom">○ Desconheço qualquer recomendação dos desenvolvedores no</span>
+  <span class="marrom">  sentido de ter que reiniciar o computador, após a ativação</span>
+  <span class="marrom">  do zRam — portanto, o reboot é opcional.</span>
+
+  <span class="marrom">● Como verificar se o zRam está ativo:</span>
+
+  <span class="marrom">○ Se quiser verificar se o zRam está ativo, use o comando dmesg em conjunto com o grep:</span>
+
+    dmesg | grep -i zram
+
+  <span class="marrom">○ Outra forma de verificar é com o seguinte comando:</span>
 
     cat /proc/swaps
 
-    <span class="marrom">○ O comando acima deve retornar algo como (indicando que esta tudo ok):</span>
-<span class="marrom">
+  <span class="marrom">○ Se o zRam aparecer no resultado, deste jeito, é por que está ativo:</span>
+    <span class="marrom">
       Filename        Type       Size  Used  Priority
       /dev/sda5     partition  3617788   0     -1
       /dev/zram0    partition  443188    0      5
       /dev/zram1    partition  443188    0      5
       /dev/zram2    partition  443188    0      5
       /dev/zram3    partition  443188    0      5
-</span>
+   </span>
   <span class="marrom">● Para desinstalar:</span>
 
-    sudo apt-get purge zram-config
+    sudo dpkg --purge zramswap-enabler
+    sudo dpkg --purge zram-config
+
 ================================================================================
 <a name="065.00">065.00</a> <a href="#topo">(topo)</a>         <span class="azul">PDF - COMO JUNTAR E DIVIDIR ARQUIVOS</span>
 ================================================================================
@@ -1523,6 +1580,28 @@
     $ ffmpeg -i input.mp3 -acodec libmp3lame -ac 2 -ab 64k -ar 44100 output.mp3
 
 ================================================================================
+<a name="071.01">071.01</a> <a href="#topo">(topo)</a>                <span class="azul">FFMPEG - INSERIR LEGENDA</span>
+================================================================================
+
+  <span class="marrom">● Comando:</span>
+
+    $ ffmpeg -i video.mp4 -vf subtitles=video.srt video_legendado.mp4
+
+  <span class="marrom">○ Site para download de legendas do youtube no formato str:</span>
+
+    www.yousubtitles.com
+
+================================================================================
+<a name="071.02">071.02</a> <a href="#topo">(topo)</a>                <span class="azul">FFMPEG - ADICIONAR AUDIO AO VÍDEO</span>
+================================================================================
+
+  <span class="marrom">● Comando:</span>
+
+    $ ffmpeg -i video-original.mov -i audio.mp3 video-final.avi
+
+  <span class="marrom">○ Este comando irá remover o áudio original e adicionar o novo áudio!</span>
+
+================================================================================
 <a name="072.00">072.00</a> <a href="#topo">(topo)</a>                  <span class="azul">MAKE UNINSTALL</span>
 ================================================================================
 
@@ -1535,6 +1614,21 @@
     # make -n install
 
   <span class="marrom">○ que mostra os comandos que seriam executados pela regra install (mas não os<br>&nbsp;&nbsp;&nbsp;&nbsp;executa). Com eles, você pode analisar e remover manualmente as alterações <br>&nbsp;&nbsp;&nbsp;&nbsp;que foram feitas.</span>
+
+================================================================================
+<a name="073.00">073.00</a> <a href="#topo">(topo)</a>                  <span class="azul">BAIXAR SITE INTEIRO COM WGET</span>
+================================================================================
+
+  <span class="marrom">● Comando wget:</span>
+
+    $ wget -r -k -p www.meusite.com.br
+
+  <span class="marrom">● Onde:</span>
+
+    <b>-r</b> Recursivo.
+    <b>-k</b> Converter links para visualização local.
+    <b>-p</b> Baixa todos os requisitos necessários 
+              para a página ser visualizada, como por exemplo, os arquivos css, imagens e javascript.
 
 </pre>
   </div>
