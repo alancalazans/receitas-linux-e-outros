@@ -121,6 +121,7 @@
   <a href="#071.02">071.02</a> <span class="marrom">●</span> FFMPEG - ADICIONAR NOVO AUDIO AO VÍDEO
   <a href="#072.00">072.00</a> <span class="marrom">●</span> MAKE UNINSTALL
   <a href="#073.00">073.00</a> <span class="marrom">●</span> BAIXAR SITE INTEIRO COM WGET
+  <a href="#074.00">074.00</a> <span class="marrom">●</span> RESUMO GIT
 
 ================================================================================
 <a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
@@ -1634,6 +1635,62 @@
     <b>-k</b> Converter links para visualização local.
     <b>-p</b> Baixa todos os requisitos necessários 
               para a página ser visualizada, como por exemplo, os arquivos css, imagens e javascript.
+
+================================================================================
+<a name="074.00">074.00</a> <a href="#topo">(topo)</a>                  <span class="azul">Resumo Git</span>
+================================================================================
+
+  <span class="marrom">● Para usar o git é necessario instalá-lo:</span>
+
+    $ sudo apt-get install git
+
+  <span class="marrom">● Após sua instalação proceder as configuções iniciais:</span>
+
+    $ git config --global user.name "yourname"
+    $ git config --global user.email youremail@email.com
+
+  <span class="marrom">● Conferindo as configurações:</span>
+
+    $ git config --list
+
+  <span class="marrom">● Clonando projeto do github:</span>
+
+    $ git clone https://github.com/&lt;user&gt;/&lt;nome-projeto&gt;
+
+  <span class="marrom">● Criando arquivos de sincronização:</span>
+
+    $ git init
+
+  <span class="marrom">● Checando se existem atulizações:</span>
+
+    $ git status
+
+  <span class="marrom">● Adicionando todas as modificações:</span>
+
+    $ git add -A
+
+  <span class="marrom">● Confirmando que todas as modificações</span>
+  <span class="marrom">foram colocadas p/ a sincronização:</span>
+
+    $ git status
+
+  <span class="marrom">● Comitando as modificações:</span>
+
+    $ git commit -m "Modificações realizadas"
+
+  <span class="marrom">● Confirmando que todos os arquivos foram commitados:</span>
+
+    $ git status
+
+  <span class="marrom">● Efetivando a sincronização:</span>
+
+    $ git push -u origin master
+
+  <span class="marrom">● Se certificando que o seu repositório</span>
+  <span class="marrom">está sincronizado com o repositório</span>
+  <span class="marrom">remoto:</span>
+
+    $ git pull origin master
 
 </pre>
   </div>
