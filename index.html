@@ -1164,7 +1164,11 @@
 
   <span class="marrom">● Por exemplo mudaremos para:</span>
 
-    /home/&lt;username&gt;/www
+    sudo cp -r /opt/lampp/htdocs $HOME/Workspace/
+
+    sudo chown -R $USER:$USER $HOME/Workspace/htdocs
+
+    chmod -R 755 $HOME/Workspace/htdocs
 
   <span class="marrom">● No diretório: '/opt/lampp/etc', editar o arquivo 'httpd.conf':</span>
 
