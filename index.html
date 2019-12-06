@@ -122,6 +122,9 @@
   <a href="#072.00">072.00</a> <span class="marrom">●</span> MAKE UNINSTALL
   <a href="#073.00">073.00</a> <span class="marrom">●</span> BAIXAR SITE INTEIRO COM WGET
   <a href="#074.00">074.00</a> <span class="marrom">●</span> RESUMO GIT
+  <a href="#075.00">075.00</a> <span class="marrom">●</span> MKV TRATAR
+  <a href="#076.00">076.00</a> <span class="marrom">●</span> SCRIPT COM SENHA DE ROOT EMBUTIDA
+  <a href="#077.00">077.00</a> <span class="marrom">●</span> COMPILANDO SCRIPT
 
 ================================================================================
 <a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
@@ -1692,6 +1695,84 @@
   <span class="marrom">&nbsp;&nbsp;remoto:</span>
 
     $ git pull origin master
+
+
+================================================================================
+<a name="075.00">075.00</a> <a href="#topo">(topo)</a>                      <span class="azul">MKV TRATAR</span>
+================================================================================
+
+  <span class="marrom">● Instalar a app MKVTOOLNIX:</span>
+
+    $ sudo apt-get install mkvtoolnix-gui
+
+    <span class="marrom">○ Obs.: Com esta app se pode recompilar o vídeo mkv</span>
+    <span class="marrom">  suprimindo audios adicionais que estão em outro</span>
+    <span class="marrom">  idioma e etc.</span>
+
+  <span class="marrom">● Gerar o script abaixo:</span>
+
+#!/bin/bash
+clear
+echo '========================================
+● Iniciando extração do audio e conversão
+========================================'
+ffmpeg -i $1.mkv -ab 192000 audio.aac
+echo ''
+echo '========================================
+● Subistituição do audio no vídeo criando
+  novo arquivo
+========================================'
+ffmpeg -i $1.mkv -i audio.aac -map 0:v -map 1:a -codec copy -shortest $1_novo.mkv
+rm audio.aac
+echo ''
+echo '========================================
+● Fim !!!
+========================================'
+
+    <span class="marrom">○ Este script troca o audio original 'ac3' para 'aac'</span>
+    <span class="marrom">  compatibilizando para reprodução em tv</span>
+
+    <span class="marrom">○ Obs.: Sugestão de nome para o script: convert-audio-ac3-to-aac.sh</span>
+
+================================================================================
+<a name="076.00">076.00</a> <a href="#topo">(topo)</a>             <span class="azul">SCRIPT COM SENHA DE ROOT EMBUTIDA</span>
+================================================================================
+
+  <span class="marrom">● Exemplo de script p/ start ou stop do apache e mysql:</span>
+
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  echo "Faltou inserir um argumento!"
+  exit 1
+fi
+
+if [[ "$1" == "start" ]]; then
+  echo -e "&lt;senha&gt;\n" | sudo -S /opt/lampp/lampp startmysql && sudo -S /opt/lampp/lampp startapache
+else
+  if [[ "$1" == "stop" ]]; then
+    echo -e "&lt;senha&gt;\n" | sudo -S /opt/lampp/lampp stopmysql && sudo -S /opt/lampp/lampp stopapache
+  fi
+fi
+
+    <span class="marrom">○ Obs.: Sugestão de nome para o script: services.sh</span>
+
+================================================================================
+<a name="077.00">077.00</a> <a href="#topo">(topo)</a>                    <span class="azul">COMPILANDO SCRIPT</span>
+================================================================================
+
+  <span class="marrom">● Instalar shc:</span>
+
+    $ sudo apt-get install shc
+
+  <span class="marrom">● Compilando o script:</span>
+
+    $ shc -f script.sh
+
+  <span class="marrom">○ Nota: serão criados:</span>
+
+    → script.sh.c
+    → script.sh.x (este é o executável)
 
 </pre>
   </div>
