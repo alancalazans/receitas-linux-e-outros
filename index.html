@@ -62,7 +62,8 @@
   <a href="#016.00">016.00</a> <span class="marrom">●</span> GIMP - MANUAL
   <a href="#017.00">017.00</a> <span class="marrom">●</span> FIREFOX - TRADUZINDO PARA PT-BR NO UBUNTU
   <a href="#018.00">018.00</a> <span class="marrom">●</span> CHROMIUM - INSTALAÇÃO COM INTERFACE EM PORTUGUÊS
-  <a href="#018.01">018.01</a> <span class="marrom">●</span> SEAMONKEY - INSTALAR NO UBUNTU
+  <a href="#018.03">018.03</a> <span class="marrom">●</span> DESABILITANDO CHAVEIRO DE SESSÃO NO CHROMIUM-BROWSER
+  <a href="#018.05">018.05</a> <span class="marrom">●</span> SEAMONKEY - INSTALAR NO UBUNTU
   <a href="#019.00">019.00</a> <span class="marrom">●</span> JAVA 8 - COMO INSTALAR NO UBUNTU
   <a href="#020.00">020.00</a> <span class="marrom">●</span> ADOBE FLASH P/ FIREFOX E CHROMIUM
   <a href="#021.00">021.00</a> <span class="marrom">●</span> IRON BROWSER - DOWNLOAD
@@ -616,9 +617,43 @@
       sudo locale-gen
 
     <span class="marrom">● Pronto! Abra o seu chromium e veja ele totalmente em português brasileiro.</span>
+		
+================================================================================
+<a name="018.03">018.03</a> <a href="#topo">(topo)</a>    <span class="azul">DESABILITANDO CHAVEIRO DE SESSÃO NO CHROMIUM-BROWSER</span>
+================================================================================
+
+  <span class="marrom">● Instale o pacote 'seahorse':</span>
+
+    $ sudo apt install seahorse
+
+    <span class="marrom">○ Obs.: Se sua distribuição já possuir o 'seahorse' melhor ainda.</span>
+
+  <span class="marrom">● Abra a aplicação:</span>
+
+    $ seahorse
+
+  <span class="marrom">● No campo "Senhas" no lado esquerdo da janela, clique com o
+    botão direito em "Login", e selecione "Alterar senha". O
+    programa pedirá para digitar a senha antiga, digite-a. Caso
+    não lembre-a, tente usar a senha do usuário da conta mesmo.
+    Em seguida, o seahorse pedirá para informar a nova senha.
+    Deixe o campo completamente vazio, sem espaços, letras,
+    números nem outro caractere, e continue.</span>
+
+  <span class="marrom">● Obs.: Após o procedimento acima se ainda não funcionar edite o link:</span>
+
+    $ sudo gvim /usr/share/applications/chromium-browser.desktop
+
+  <span class="marrom">● Modifique a linha abaixo:</span>
+
+    Exec=chromium-browser -u
+
+    <span class="marrom">○ Para:</span>
+
+      Exec=chromium-browser --password-store=basic -u
 
 ================================================================================
-<a name="018.01">018.01</a> <a href="#topo">(topo)</a>            <span class="azul">SEAMONKEY - INSTALAR NO UBUNTU</span>
+<a name="018.05">018.05</a> <a href="#topo">(topo)</a>            <span class="azul">SEAMONKEY - INSTALAR NO UBUNTU</span>
 ================================================================================
 
   <span class="marrom">● No terminal entre com seguintes comandos:</span>
