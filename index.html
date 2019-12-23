@@ -46,11 +46,12 @@
   <a href="#004.00">004.00</a> <span class="marrom">●</span> UBUNTU GNOME
   <a href="#005.00">005.00</a> <span class="marrom">●</span> LINUX LITE - SCREENSAVER
   <a href="#006.00">006.00</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL VERSÃO DO UBUNTU
-  <a href="#006.01">006.01</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL A ARQUITETURA DE INTERFACE DO UBUNTU  
+  <a href="#006.01">006.01</a> <span class="marrom">●</span> COMANDO PARA SABER QUAL A ARQUITETURA DE INTERFACE DO UBUNTU
   <a href="#007.00">007.00</a> <span class="marrom">●</span> UNINSTALL PROGRAMA E CORRIGINDO PACOTES DE INSTALAÇÃO
   <a href="#008.00">008.00</a> <span class="marrom">●</span> COMANDOS DE LIMPESA GERAL
   <a href="#008.01">008.01</a> <span class="marrom">●</span> BLEACHBIT PROGRAMA P/ LIMPESA GERAL
   <a href="#009.00">009.00</a> <span class="marrom">●</span> FORMATAR PENDRIVE
+  <a href="#009.05">009.05</a> <span class="marrom">●</span> CRIANDO PENDRIVE DE BOOT COM UNETBOOTIN NO DEBIAN
   <a href="#010.00">010.00</a> <span class="marrom">●</span> ALTERAR VOLUME (LABEL) PENDRIVE
   <a href="#011.00">011.00</a> <span class="marrom">●</span> MONTANDO UMA UNIDADE VIRTUAL
   <a href="#012.00">012.00</a> <span class="marrom">●</span> CRIANDO ARQUIVO ISO
@@ -421,6 +422,20 @@
   <span class="marrom">● Para ejetar pendrive:</span>
 
     # eject /dev/sdb1
+
+================================================================================
+<a name="009.05">009.05</a> <a href="#topo">(topo)</a>   <span class="azul">CRIANDO PENDRIVE DE BOOT COM UNETBOOTIN NO DEBIAN</span>
+================================================================================
+
+  <span class="marrom">● Para o Debian baixe o binário no site:</span>
+
+    <a href="https://unetbootin.github.io/linux_download.html">https://unetbootin.github.io/linux_download.html</a>
+
+  <img src="assets/img/png/unetbootin_site.png" width="635" height="333" title="Site Unetbootin" alt="Site Unetbootin" />
+
+  <span class="marrom">● Depois basta executá-lo para usar a aplicação:</span>
+
+    sudo ./unetbootin-linux64-675.bin
 
 ================================================================================
 <a name="010.00">010.00</a> <a href="#topo">(topo)</a>            <span class="azul">ALTERAR VOLUME (LABEL) PENDRIVE</span>
@@ -938,7 +953,7 @@
 
     <span class="marrom">○ Assim podemos desinstalar (caso necessário) da seguinte forma:</span>
 
-       <strong>sudo gnome-terminal</strong> <span class="purpura">(para abrir terminal como super-usuário)</span> 
+       <strong>sudo gnome-terminal</strong> <span class="purpura">(para abrir terminal como super-usuário)</span>
        <strong>cat files.txt | xargs rm -rf</strong> <span class="purpura">(para remover os arquivos gravados pela etapa anterior)</span>
 
 ================================================================================
@@ -1652,8 +1667,8 @@
 
     <b>-r</b> Recursivo.
     <b>-k</b> Converter links para visualização local.
-    <b>-p</b> Baixa todos os requisitos necessários 
-       para a página ser visualizada, como por 
+    <b>-p</b> Baixa todos os requisitos necessários
+       para a página ser visualizada, como por
        exemplo, os arquivos css, imagens e javascript.
 
 ================================================================================
