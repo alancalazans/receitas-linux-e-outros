@@ -632,7 +632,7 @@
       sudo locale-gen
 
     <span class="marrom">● Pronto! Abra o seu chromium e veja ele totalmente em português brasileiro.</span>
-		
+
 ================================================================================
 <a name="018.03">018.03</a> <a href="#topo">(topo)</a>    <span class="azul">DESABILITANDO CHAVEIRO DE SESSÃO NO CHROMIUM-BROWSER</span>
 ================================================================================
@@ -1782,14 +1782,15 @@ clear
 echo '========================================
 ● Iniciando extração do audio e conversão
 ========================================'
-ffmpeg -i $1.mkv -ab 192000 audio.aac
+ffmpeg -i $1 -ab 192000 audio.aac
 echo ''
 echo '========================================
 ● Subistituição do audio no vídeo criando
   novo arquivo
 ========================================'
-ffmpeg -i $1.mkv -i audio.aac -map 0:v -map 1:a -codec copy -shortest $1_novo.mkv
+ffmpeg -i $1 -i audio.aac -map 0:v -map 1:a -codec copy -shortest aac_$1
 rm audio.aac
+rm $1
 echo ''
 echo '========================================
 ● Fim !!!
