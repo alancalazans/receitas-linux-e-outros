@@ -128,6 +128,7 @@
   <a href="#075.00">075.00</a> <span class="marrom">●</span> MKV TRATAR
   <a href="#076.00">076.00</a> <span class="marrom">●</span> SCRIPT COM SENHA DE ROOT EMBUTIDA
   <a href="#077.00">077.00</a> <span class="marrom">●</span> COMPILANDO SCRIPT
+  <a href="#078.00">078.00</a> <span class="marrom">●</span> FIND E LOCATE
 
 ================================================================================
 <a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
@@ -1841,6 +1842,38 @@ fi
 
     → script.sh.c
     → script.sh.x (este é o executável)
+
+================================================================================
+<a name="078.00">078.00</a> <a href="#topo">(topo)</a>                          <span class="azul">FIND</span>
+================================================================================
+
+  <span class="marrom">● Procurar por nome:</span>
+
+    $ find . -name "meu-arquivo"
+
+  <span class="marrom">● Procurar por nome (sem diferenciar letras minúsculas de maiúsculas):</span>
+
+    $ find . -iname "meu-arquivo"
+
+  <span class="marrom">● Busca por nome sem uma palavra específica no nome:</span>
+
+    $ find . -not -name "meu-arquivo"
+    
+    ou
+    
+    $ find . \! -name "meu-arquivo"
+
+  <span class="marrom">● Procurar entre múltiplos arquivos com um formato comum:</span>
+
+    $ find . -not -name "meu-arquivo"
+
+  <span class="marrom">● Encontrar um determinado arquivo pelo nome e removê-lo:</span>
+
+    $ find . -name "meu-arquivo" -delete
+    
+   <span class="marrom">○ Obs.: Mais detalhes no site:</span>
+
+   <a href="https://www.hostinger.com.br/tutoriais/find-locate-comandos-linux/" title="Title" target="_blank">https://www.hostinger.com.br/tutoriais/find-locate-comandos-linux/</a>
 
 </pre>
   </div>
