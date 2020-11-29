@@ -129,6 +129,7 @@
   <a href="#076.00">076.00</a> <span class="marrom">●</span> SCRIPT COM SENHA DE ROOT EMBUTIDA
   <a href="#077.00">077.00</a> <span class="marrom">●</span> COMPILANDO SCRIPT
   <a href="#078.00">078.00</a> <span class="marrom">●</span> FIND
+  <a href="#079.00">079.00</a> <span class="marrom">●</span> GOOGLE CHROME - CHAVEIRO DE SESSÃO
 
 ================================================================================
 <a name="001.00">001.00</a> <a href="#topo">(topo)</a>            <span class="azul">UBUNTU DOWNLOAD DISTRIBUIÇÕES</span>
@@ -1706,8 +1707,8 @@
 
   <span class="marrom">● Após sua instalação proceder as configuções iniciais:</span>
 
-    $ git config --global user.name "yourname"
-    $ git config --global user.email youremail@email.com
+    $ git config --global user.name <strong>&lt;seu nome&gt;</strong>
+    $ git config --global user.email <strong>&lt;seu email&gt;</strong>
 
   <span class="marrom">● Conferindo as configurações:</span>
 
@@ -1863,6 +1864,24 @@ fi
    <span class="marrom">○ Obs.: Mais detalhes no site:</span>
 
    <a href="https://www.hostinger.com.br/tutoriais/find-locate-comandos-linux/" title="Title" target="_blank">https://www.hostinger.com.br/tutoriais/find-locate-comandos-linux/</a>
+
+================================================================================
+<a name="079.00">079.00</a> <a href="#topo">(topo)</a>            <span class="azul">GOOGLE CHROME - CHAVEIRO DE SESSÃO</span>
+================================================================================
+
+  <span class="marrom">● Resolvendo problema:</span>
+
+   <span class="marrom">○ Edite o atalho:</span>
+
+   $ sudo gvim /usr/share/applications/google-chrome.desktop
+
+   <span class="marrom">○ Na linha que contém o código abaixo:</span>
+
+   Exec=/usr/bin/google-chrome-stable %U
+
+   <span class="marrom">○ Altere ficando assim:</span>
+
+   Exec=/usr/bin/google-chrome-stable --password-store=basic %U
 
 </pre>
   </div>
